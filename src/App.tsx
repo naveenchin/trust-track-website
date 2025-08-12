@@ -38,22 +38,22 @@ Best regards`);
     {
       icon: Shield,
       title: 'Blockchain Security',
-      description: 'Secure and tamper-proof record storage using blockchain technology'
+      description: 'Store any information securely with tamper-proof blockchain technology'
     },
     {
       icon: Users,
       title: 'Role-Based Access',
-      description: 'Different access levels for various supply chain participants'
+      description: 'Control who can view what information with customizable access levels'
     },
     {
       icon: Globe,
-      title: 'Product Tracking',
-      description: 'Track products through all stages of your supply chain'
+      title: 'Information Sharing',
+      description: 'Share any product or business information to build customer trust'
     },
     {
       icon: Lock,
       title: 'Digital Records',
-      description: 'Maintain comprehensive digital documentation and audit trails'
+      description: 'Maintain comprehensive digital records with complete audit trails'
     }
   ];
 
@@ -61,32 +61,32 @@ Best regards`);
     {
       icon: Shield,
       title: 'Enhanced Security',
-      description: 'Blockchain-based immutable records ensure data integrity and prevent tampering throughout the supply chain.'
+      description: 'Blockchain-based immutable records ensure data integrity and prevent tampering of any information you store.'
     },
     {
       icon: Globe,
-      title: 'Full Traceability',
-      description: 'Track products from origin to consumer with complete visibility into every step of the journey.'
+      title: 'Complete Transparency',
+      description: 'Share any information with your customers to build trust and transparency in your business operations.'
     },
     {
       icon: Zap,
       title: 'Increased Efficiency',
-      description: 'Streamline operations with automated tracking, real-time updates, and reduced manual paperwork.'
+      description: 'Streamline information sharing with automated updates, real-time access, and reduced manual processes.'
     },
     {
       icon: Users,
       title: 'Multi-Stakeholder Access',
-      description: 'Role-based permissions ensure each participant has appropriate access to relevant supply chain data.'
+      description: 'Role-based permissions ensure each user has appropriate access to relevant information.'
     },
     {
       icon: CheckCircle,
       title: 'Compliance Ready',
-      description: 'Meet regulatory requirements with comprehensive audit trails and standardized documentation.'
+      description: 'Meet regulatory requirements with comprehensive audit trails and tamper-proof documentation.'
     },
     {
       icon: Lock,
       title: 'Data Privacy',
-      description: 'Protect sensitive business information while maintaining transparency with granular permission controls.'
+      description: 'Protect sensitive information while maintaining transparency with granular permission controls.'
     }
   ];
 
@@ -157,11 +157,11 @@ Best regards`);
             <div>
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
                 Revolutionize Your Supply Chain with 
-                <span className="text-blue-600"> Blockchain Trust</span>
+                <span className="text-blue-600"> Blockchain Transparency</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                TrustTrack delivers end-to-end supply chain visibility with blockchain security. 
-                Track products from origin to destination with role-based access for all stakeholders.
+                TrustTrack enables you to store and share any product or business information on blockchain. 
+                Build trust with your customers by providing transparent, tamper-proof information with role-based access.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a 
@@ -232,7 +232,7 @@ Best regards`);
           </h2>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
             Experience our platform with sample data. Test the role-based access system 
-            and see how blockchain tracking works in practice. Easy integration with your existing systems through our public APIs.
+            and see how blockchain information storage works in practice. Easy integration with your existing systems through our public APIs.
           </p>
           <a 
             href="https://demo.trusttrack.io" 
@@ -251,11 +251,11 @@ Best regards`);
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Supply Chain Tracking Platform
+              Blockchain Information Platform
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              A blockchain-based platform that provides secure tracking with role-based access 
-              for all participants in your supply chain. Easy integration with existing systems through public APIs.
+              A blockchain-based platform that lets you store and share any information securely with role-based access 
+              for your stakeholders. Easy integration with existing systems through public APIs.
             </p>
           </div>
 
@@ -317,24 +317,24 @@ Best regards`);
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-               Blockchain-Based Supply Chain Tracking
+               Blockchain-Based Information Platform
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-               TrustTrack uses blockchain technology for supply chain tracking. 
-               The platform provides role-based access for different stakeholders in your supply chain with easy API integration capabilities.
+               TrustTrack uses blockchain technology to store and share any information you want your customers to see. 
+               Build trust by providing transparent, tamper-proof information with role-based access and easy API integration.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
-                  <span className="text-gray-700">Blockchain-based record keeping</span>
+                  <span className="text-gray-700">Store any information on blockchain</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
-                  <span className="text-gray-700">Role-based access control for all stakeholders</span>
+                  <span className="text-gray-700">Control who sees what with role-based access</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
-                  <span className="text-gray-700">Product tracking through supply chain stages</span>
+                  <span className="text-gray-700">Share information to build customer trust</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
@@ -347,11 +347,11 @@ Best regards`);
               <div className="space-y-4">
                 <div className="border-l-4 border-blue-600 pl-4">
                   <h4 className="font-semibold text-gray-900">Role-Based Access</h4>
-                  <p className="text-gray-600 text-sm">Configurable access levels for various supply chain participants</p>
+                  <p className="text-gray-600 text-sm">Configurable access levels for different user types</p>
                 </div>
                 <div className="border-l-4 border-green-600 pl-4">
                   <h4 className="font-semibold text-gray-900">Blockchain Security</h4>
-                  <p className="text-gray-600 text-sm">Secure and tamper-proof record storage</p>
+                  <p className="text-gray-600 text-sm">Secure and tamper-proof information storage</p>
                 </div>
                 <div className="border-l-4 border-purple-600 pl-4">
                   <h4 className="font-semibold text-gray-900">API Integration</h4>
@@ -368,10 +368,10 @@ Best regards`);
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-              Ready to Transform Your Supply Chain?
+              Ready to Build Trust with Blockchain?
             </h2>
             <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-             Ready to see how TrustTrack can work for your supply chain? 
+             Ready to see how TrustTrack can help you share information and build customer trust? 
              Try our demo or get in touch to learn more.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -403,7 +403,7 @@ Best regards`);
                 <span className="font-bold text-xl text-white">TrustTrack</span>
               </div>
               <p className="text-gray-400 mb-4 max-w-md">
-               Blockchain-powered supply chain tracking platform with role-based access control. 
+               Blockchain-powered information platform with role-based access control. 
                Built for transparency and security across all industries with easy API integration.
               </p>
             </div>
@@ -425,7 +425,7 @@ Best regards`);
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-            <p className="text-gray-400">© 2025 TrustTrack. All rights reserved. Blockchain supply chain tracking platform.</p>
+            <p className="text-gray-400">© 2025 TrustTrack. All rights reserved. Blockchain information platform.</p>
           </div>
         </div>
       </footer>
