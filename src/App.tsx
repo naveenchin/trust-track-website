@@ -399,7 +399,7 @@ Best regards`);
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center mb-4">
-                <Shield className="h-8 w-8 text-blue-400 mr-2" />
+                <Logo className="h-8 w-8 text-blue-400 mr-2" size={32} />
                 <span className="font-bold text-xl text-white">TrustTrack</span>
               </div>
               <p className="text-gray-400 mb-4 max-w-md">
