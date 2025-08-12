@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { 
-  Shield, 
   Truck, 
   Package, 
   Store, 
@@ -16,6 +15,7 @@ import {
   Zap,
   Calendar
 } from 'lucide-react';
+import { Logo } from './components/Logo';
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -36,7 +36,7 @@ Best regards`);
 
   const features = [
     {
-      icon: Shield,
+      icon: Lock,
       title: 'Blockchain Security',
       description: 'Store any information securely with tamper-proof blockchain technology'
     },
@@ -59,7 +59,7 @@ Best regards`);
 
   const benefits = [
     {
-      icon: Shield,
+      icon: Lock,
       title: 'Enhanced Security',
       description: 'Blockchain-based immutable records ensure data integrity and prevent tampering of any information you store.'
     },
