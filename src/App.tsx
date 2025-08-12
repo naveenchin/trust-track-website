@@ -13,11 +13,26 @@ import {
   BarChart3,
   Lock,
   Globe,
-  Zap
+  Zap,
+  Calendar
 } from 'lucide-react';
 
 function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const handleScheduleDemo = () => {
+    const subject = encodeURIComponent('TrustTrack Demo Request');
+    const body = encodeURIComponent(`Hello,
+
+I would like to schedule a demo of TrustTrack for my organization.
+
+Please let me know your availability.
+
+Best regards`);
+    
+    const mailtoLink = `mailto:naveen@trusttrack.io,naveenchintala1228@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = mailtoLink;
+  };
 
   const features = [
     {
@@ -76,10 +91,10 @@ function App() {
   ];
 
   const stats = [
-    { number: '5', label: 'User Roles' },
+    { number: 'Role-Based', label: 'Access Control' },
     { number: 'Live', label: 'Demo Available' },
-    { number: 'Blockchain', label: 'Secured' },
-    { number: 'Web', label: 'Based Platform' }
+    { number: 'API', label: 'Integration Ready' },
+    { number: 'Blockchain', label: 'Secured' }
   ];
 
   return (
@@ -99,7 +114,12 @@ function App() {
               <a href="#features" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Features</a>
               <a href="#benefits" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Benefits</a>
               <a href="#about" className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">About</a>
-              <a href="#contact" className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition duration-200">Request Demo</a>
+              <button 
+                onClick={handleScheduleDemo}
+                className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition duration-200"
+              >
+                Request Demo
+              </button>
             </div>
 
             <div className="md:hidden flex items-center">
@@ -119,7 +139,12 @@ function App() {
               <a href="#features" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Features</a>
               <a href="#benefits" className="block px-3 py-2 text-gray-700 hover:text-blue-600">Benefits</a>
               <a href="#about" className="block px-3 py-2 text-gray-700 hover:text-blue-600">About</a>
-              <a href="#contact" className="block px-3 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">Request Demo</a>
+              <button 
+                onClick={handleScheduleDemo}
+                className="block px-3 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 w-full text-left"
+              >
+                Request Demo
+              </button>
             </div>
           </div>
         )}
@@ -140,18 +165,22 @@ function App() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a 
-                  href="#contact" 
+                  href="#contact"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleScheduleDemo();
+                  }}
                   className="bg-blue-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-blue-700 transition duration-200 text-center"
                 >
                   Schedule Demo
                 </a>
                 <a 
-                  href="https://rad-lily-c4e61f.netlify.app" 
+                  href="https://demo.trusttrack.io" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-md font-semibold hover:bg-blue-50 transition duration-200 text-center"
                 >
-                  View Live Platform
+                  Try Demo
                 </a>
               </div>
             </div>
@@ -202,16 +231,16 @@ function App() {
             See TrustTrack in Action
           </h2>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Experience our live platform with sample data. Test the role-based access system 
-            and see how blockchain tracking works in practice.
+            Experience our platform with sample data. Test the role-based access system 
+            and see how blockchain tracking works in practice. Easy integration with your existing systems through our public APIs.
           </p>
           <a 
-            href="https://rad-lily-c4e61f.netlify.app" 
+            href="https://demo.trusttrack.io" 
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center bg-blue-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-blue-700 transition duration-200"
           >
-            Try Live Demo
+            Try Demo
             <ArrowRight className="ml-2 h-5 w-5" />
           </a>
         </div>
@@ -225,8 +254,8 @@ function App() {
               Supply Chain Tracking Platform
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              A blockchain-based platform that provides secure tracking and role-based access 
-              for all participants in your supply chain.
+              A blockchain-based platform that provides secure tracking with role-based access 
+              for all participants in your supply chain. Easy integration with existing systems through public APIs.
             </p>
           </div>
 
@@ -292,7 +321,7 @@ function App() {
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                TrustTrack uses blockchain technology for supply chain tracking. 
-               The platform provides role-based access for different stakeholders in your supply chain.
+               The platform provides role-based access for different stakeholders in your supply chain with easy API integration capabilities.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
@@ -309,7 +338,7 @@ function App() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
-                  <span className="text-gray-700">Digital record management</span>
+                  <span className="text-gray-700">Public API integration with existing systems</span>
                 </div>
               </div>
             </div>
@@ -318,15 +347,15 @@ function App() {
               <div className="space-y-4">
                 <div className="border-l-4 border-blue-600 pl-4">
                   <h4 className="font-semibold text-gray-900">Role-Based Access</h4>
-                  <p className="text-gray-600 text-sm">Different access levels for various supply chain participants</p>
+                  <p className="text-gray-600 text-sm">Configurable access levels for various supply chain participants</p>
                 </div>
                 <div className="border-l-4 border-green-600 pl-4">
                   <h4 className="font-semibold text-gray-900">Blockchain Security</h4>
                   <p className="text-gray-600 text-sm">Secure and tamper-proof record storage</p>
                 </div>
                 <div className="border-l-4 border-purple-600 pl-4">
-                  <h4 className="font-semibold text-gray-900">Web-Based Platform</h4>
-                  <p className="text-gray-600 text-sm">Access from any device with internet connection</p>
+                  <h4 className="font-semibold text-gray-900">API Integration</h4>
+                  <p className="text-gray-600 text-sm">Public APIs for easy integration with existing systems</p>
                 </div>
               </div>
             </div>
@@ -343,13 +372,20 @@ function App() {
             </h2>
             <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
              Ready to see how TrustTrack can work for your supply chain? 
-             Try our live demo or get in touch to learn more.
+             Try our demo or get in touch to learn more.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-blue-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition duration-200">
+              <button 
+                onClick={handleScheduleDemo}
+                className="bg-white text-blue-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition duration-200 inline-flex items-center justify-center"
+              >
+                <Calendar className="mr-2 h-5 w-5" />
                 Schedule Demo
               </button>
-              <button className="border-2 border-white text-white px-8 py-3 rounded-md font-semibold hover:bg-white hover:text-blue-600 transition duration-200">
+              <button 
+                onClick={handleScheduleDemo}
+                className="border-2 border-white text-white px-8 py-3 rounded-md font-semibold hover:bg-white hover:text-blue-600 transition duration-200"
+              >
                 Contact Sales
               </button>
             </div>
@@ -368,7 +404,7 @@ function App() {
               </div>
               <p className="text-gray-400 mb-4 max-w-md">
                Blockchain-powered supply chain tracking platform with role-based access control. 
-               Built for transparency and security across all industries.
+               Built for transparency and security across all industries with easy API integration.
               </p>
             </div>
             <div>
@@ -376,14 +412,14 @@ function App() {
               <ul className="space-y-2">
                 <li><a href="#features" className="text-gray-400 hover:text-white transition-colors">Features</a></li>
                 <li><a href="#benefits" className="text-gray-400 hover:text-white transition-colors">Benefits</a></li>
-                <li><a href="https://rad-lily-c4e61f.netlify.app" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Live Demo</a></li>
+                <li><a href="https://demo.trusttrack.io" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Try Demo</a></li>
               </ul>
             </div>
             <div>
               <h3 className="text-white font-semibold mb-4">Company</h3>
               <ul className="space-y-2">
                 <li><a href="#about" className="text-gray-400 hover:text-white transition-colors">About</a></li>
-                <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                <li><button onClick={handleScheduleDemo} className="text-gray-400 hover:text-white transition-colors text-left">Contact</button></li>
                 <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Support</a></li>
               </ul>
             </div>
