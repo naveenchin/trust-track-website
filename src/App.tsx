@@ -105,7 +105,7 @@ Best regards`);
           <div className="flex justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0 flex items-center">
-                <Logo className="h-8 w-8 text-blue-600 mr-2" size={32} />
+                <Logo className="h-10 w-10 text-blue-600 mr-3" size={40} />
                 <span className="font-bold text-xl text-gray-900">TrustTrack</span>
               </div>
             </div>
