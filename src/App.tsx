@@ -105,7 +105,7 @@ Best regards`);
           <div className="flex justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0 flex items-center">
-                <Shield className="h-8 w-8 text-blue-600 mr-2" />
+                <Logo className="h-8 w-8 text-blue-600 mr-2" size={32} />
                 <span className="font-bold text-xl text-gray-900">TrustTrack</span>
               </div>
             </div>
@@ -187,7 +187,7 @@ Best regards`);
             <div className="relative">
               <div className="bg-white rounded-lg shadow-2xl p-8">
                 <div className="flex items-center mb-4">
-                  <Shield className="h-6 w-6 text-blue-600 mr-2" />
+                  <Logo className="h-6 w-6 text-blue-600 mr-2" size={24} />
                   <span className="font-semibold text-gray-900">Supply Chain Dashboard</span>
                 </div>
                 <div className="space-y-3">
