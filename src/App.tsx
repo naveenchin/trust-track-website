@@ -407,7 +407,7 @@ Best regards`);
                     </div>
                     <h4 className="text-lg font-medium text-gray-900 mb-6">QR Code → Battery Passport</h4>
                     <img 
-                      src={`https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://trusttrack.io/dbp`}
+                      src={`https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://trusttrack.io/dbp.html`}
                       alt="QR Code linking to Digital Battery Passport"
                       className="w-full h-full object-contain rounded-lg"
                     />
@@ -441,7 +441,7 @@ Best regards`);
                     </div>
                     <h4 className="text-lg font-medium text-gray-900 mb-6">ESG Dashboard</h4>
                     <img 
-                      src={`https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://trusttrack.io/esg`}
+                      src={`https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://trusttrack.io/esg.html`}
                       alt="QR Code linking to TrustTrack"
                       className="w-24 h-24 mx-auto mb-4 border border-gray-200 rounded-lg"
                     />
@@ -512,7 +512,7 @@ Best regards`);
                     </div>
                     <h4 className="text-lg font-medium text-gray-900 mb-6">CBAM Report</h4>
                     <img 
-                      src={`https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://trusttrack.io/cbam`}
+                      src={`https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://trusttrack.io/cbam.html`}
                       alt="QR Code linking to CBAM Report"
                       className="w-24 h-24 mx-auto mb-4 border border-gray-200 rounded-lg"
                     />
