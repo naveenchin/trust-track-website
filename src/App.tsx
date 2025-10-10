@@ -82,6 +82,12 @@ Best regards`);
       title: 'Compliance Ready',
       description: 'Auto-generate regulator-ready reports for BDP, CBAM, and ESG compliance from QR-linked passport data.',
       color: 'text-emerald-500'
+    },
+    {
+      icon: Shield,
+      title: 'Data Ownership',
+      description: 'You maintain complete control and ownership of your data. Our platform ensures your sensitive business information remains yours.',
+      color: 'text-blue-500'
     }
   ];
 
