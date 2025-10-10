@@ -226,7 +226,7 @@ Best regards`);
                 </a>
               </div>
               <div className="mt-12 text-xs text-emerald-600 font-medium tracking-wide uppercase">
-                DBP • CBAM • ESG • Audit-Ready
+                Authenticity • Accountability • Audit-Ready
               </div>
             </div>
             <div className="lg:col-span-5">
