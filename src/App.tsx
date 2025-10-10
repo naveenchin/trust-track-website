@@ -605,7 +605,6 @@ Best regards`);
                   GET /api/v1/passports/{id}<br/>
                   POST /api/v1/compliance/dbp
                 </code>
-              </p>
             </div>
             <div className="bg-white border border-gray-200 rounded-2xl p-10">
               <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-8">
@@ -622,7 +621,6 @@ Best regards`);
                   GET /api/v1/blockchain/verify/{hash}<br/>
                   GET /api/v1/audit/trail/{id}
                 </code>
-              </p>
             </div>
           </div>
         </div>
