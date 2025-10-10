@@ -353,13 +353,13 @@ Best regards`);
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-6">
-              Digital Product Passport Solutions:
+              API-Powered Digital Passport Solutions:
               <br />
-              <span className="font-medium">QR-Powered Compliance for DBP, CBAM & ESG</span>
+              <span className="font-medium">Programmatic QR Generation for DBP, CBAM & ESG</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Each product receives a unique QR code linking to its digital passport with specialized 
-              compliance data for Digital Battery Passports (DBP), carbon reporting, and sustainability metrics.
+              Use our APIs to programmatically generate unique QR codes for any product. Each QR links to specialized 
+              digital passports with compliance data for Digital Battery Passports (DBP), carbon reporting, and ESG metrics.
             </p>
           </div>
 
