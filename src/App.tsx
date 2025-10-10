@@ -198,16 +198,16 @@ Best regards`);
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
             <div className="lg:col-span-7">
               <div className="text-emerald-600 font-medium text-sm mb-6 tracking-wide uppercase">
-                Integration-Ready • Developer-Friendly • Audit-Ready
+                API-First • Developer-Friendly • Audit-Ready
               </div>
               <h1 className="text-5xl lg:text-6xl font-light text-gray-900 mb-8 leading-tight">
-                Digital Platform for
+                API-First Platform for
                 <br />
                 <span className="font-medium">Digital Product Passports</span>
               </h1>
               <p className="text-xl text-gray-600 mb-10 leading-relaxed max-w-2xl">
-                TrustTrack generates unique QR codes for Digital Product Passports with seamless integration 
-                capabilities for your existing ERP, MES, and LIMS systems. Specialized solutions for Digital Battery 
+                TrustTrack provides RESTful APIs to generate unique QR codes for Digital Product Passports. 
+                Integrate with your existing ERP, MES, and LIMS systems. Specialized APIs for Digital Battery 
                 Passports (DBP), CBAM compliance, and ESG reporting with blockchain-verified data integrity.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -594,16 +594,16 @@ Best regards`);
               <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-8">
                 <Database className="h-6 w-6 text-blue-500" />
               </div>
-              <h3 className="text-2xl font-medium text-gray-900 mb-6">RESTful API Suite</h3>
+              <h3 className="text-2xl font-medium text-gray-900 mb-6">System Integration</h3>
               <p className="text-gray-600 leading-relaxed">
-                Complete REST API endpoints for QR generation, passport creation, and compliance reporting. 
-                OpenAPI 3.0 documentation with SDKs for popular programming languages.
+                API-first platform with REST endpoints for QR generation, passport creation, and compliance reporting. 
+                Easy integration with existing systems through standardized interfaces.
               </p>
               <div className="mt-6 bg-gray-50 p-4 rounded-lg">
                 <code className="text-sm text-gray-700">
-                  POST /api/v1/qr/generate<br/>
-                  GET /api/v1/passports/{'{id}'}<br/>
-                  POST /api/v1/compliance/dbp
+                  Connect to ERP Systems<br/>
+                  Integrate with MES/LIMS<br/>
+                  Real-time Data Sync
                 </code>
               </div>
             </div>
@@ -611,16 +611,16 @@ Best regards`);
               <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-8">
                 <Lock className="h-6 w-6 text-emerald-500" />
               </div>
-              <h3 className="text-2xl font-medium text-gray-900 mb-6">Blockchain Integration APIs</h3>
+              <h3 className="text-2xl font-medium text-gray-900 mb-6">Blockchain Integration</h3>
               <p className="text-gray-600 leading-relaxed">
-                API endpoints for immutable data recording and verification. Every compliance record is 
+                Seamless blockchain integration for immutable data recording and verification. Every compliance record is 
                 cryptographically secured and tamper-proof through blockchain integration.
               </p>
               <div className="mt-6 bg-gray-50 p-4 rounded-lg">
                 <code className="text-sm text-gray-700">
-                  POST /api/v1/blockchain/record<br/>
-                  GET /api/v1/blockchain/verify/{'{hash}'}<br/>
-                  GET /api/v1/audit/trail/{'{id}'}
+                  Immutable Data Recording<br/>
+                  Cryptographic Verification<br/>
+                  Audit Trail Generation
                 </code>
               </div>
             </div>
