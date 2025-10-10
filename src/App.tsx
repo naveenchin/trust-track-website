@@ -602,7 +602,7 @@ Best regards`);
               <div className="mt-6 bg-gray-50 p-4 rounded-lg">
                 <code className="text-sm text-gray-700">
                   POST /api/v1/qr/generate<br/>
-                  GET /api/v1/passports/{id}<br/>
+                  GET /api/v1/passports/{'{id}'}<br/>
                   POST /api/v1/compliance/dbp
                 </code>
               </div>
@@ -619,8 +619,8 @@ Best regards`);
               <div className="mt-6 bg-gray-50 p-4 rounded-lg">
                 <code className="text-sm text-gray-700">
                   POST /api/v1/blockchain/record<br/>
-                  GET /api/v1/blockchain/verify/{hash}<br/>
-                  GET /api/v1/audit/trail/{id}
+                  GET /api/v1/blockchain/verify/{'{hash}'}<br/>
+                  GET /api/v1/audit/trail/{'{id}'}
                 </code>
               </div>
             </div>
