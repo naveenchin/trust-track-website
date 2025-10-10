@@ -5,82 +5,59 @@ interface LogoProps {
   size?: number;
 }
 
-export const Logo: React.FC<LogoProps> = ({ className = "", size = 44 }) => {
+export const Logo: React.FC<LogoProps> = ({ className = "", size = 40 }) => {
   return (
     <svg
       width={size}
       height={size}
-      viewBox="0 0 44 44"
+      viewBox="0 0 40 40"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      {/* Outer circular tracking line - represents supply chain flow */}
-      <circle
-        cx="22"
-        cy="22"
-        r="18"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeDasharray="8 4"
-        opacity="0.4"
-      />
-      
-      {/* Inner circular tracking line - represents data circularity */}
-      <circle
-        cx="22"
-        cy="22"
-        r="12"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeDasharray="4 2"
-        opacity="0.6"
-      />
-      
-      {/* Central keystone/lock - represents trust and immutability */}
+      {/* Interlocked T's forming a data block */}
+      {/* First T - positioned left */}
       <path
-        d="M22 8L28 12V32L22 36L16 32V12L22 8Z"
+        d="M8 8H22V12H17V32H13V12H8V8Z"
         fill="currentColor"
-        opacity="0.8"
+        opacity="0.9"
       />
       
-      {/* Lock mechanism inside keystone */}
+      {/* Second T - positioned right, interlocking */}
+      <path
+        d="M18 8H32V12H27V32H23V12H18V8Z"
+        fill="currentColor"
+        opacity="0.9"
+      />
+      
+      {/* Interlocking connection - the horizontal bars merge */}
       <rect
-        x="19"
-        y="18"
-        width="6"
-        height="8"
-        rx="1"
-        fill="white"
-        opacity="0.9"
+        x="13"
+        y="8"
+        width="14"
+        height="4"
+        fill="currentColor"
+        opacity="1"
       />
       
-      {/* Lock shackle */}
-      <path
-        d="M20 18V16C20 14.9 20.9 14 22 14C23.1 14 24 14.9 24 16V18"
-        stroke="white"
-        strokeWidth="1.5"
+      {/* Data block outline - subtle border around the merged form */}
+      <rect
+        x="7"
+        y="7"
+        width="26"
+        height="26"
         fill="none"
-        opacity="0.9"
-      />
-      
-      {/* Tracking nodes at key positions - audit points */}
-      <circle cx="22" cy="4" r="2" fill="currentColor" opacity="0.7" />
-      <circle cx="35" cy="15" r="2" fill="currentColor" opacity="0.7" />
-      <circle cx="35" cy="29" r="2" fill="currentColor" opacity="0.7" />
-      <circle cx="22" cy="40" r="2" fill="currentColor" opacity="0.7" />
-      <circle cx="9" cy="29" r="2" fill="currentColor" opacity="0.7" />
-      <circle cx="9" cy="15" r="2" fill="currentColor" opacity="0.7" />
-      
-      {/* Connection lines between tracking nodes - data relationships */}
-      <path
-        d="M22 6L33 17M33 17L33 27M33 27L22 38M22 38L11 27M11 27L11 17M11 17L22 6"
         stroke="currentColor"
-        strokeWidth="0.5"
-        opacity="0.2"
+        strokeWidth="1"
+        opacity="0.3"
+        rx="2"
       />
+      
+      {/* Trust indicators - small dots at corners */}
+      <circle cx="10" cy="10" r="1.5" fill="currentColor" opacity="0.6" />
+      <circle cx="30" cy="10" r="1.5" fill="currentColor" opacity="0.6" />
+      <circle cx="10" cy="30" r="1.5" fill="currentColor" opacity="0.6" />
+      <circle cx="30" cy="30" r="1.5" fill="currentColor" opacity="0.6" />
     </svg>
   );
 };
