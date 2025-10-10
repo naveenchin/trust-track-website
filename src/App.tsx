@@ -714,7 +714,7 @@ Best regards`);
               </p>
               <div className="text-xs text-gray-500 leading-relaxed">
                 TrustTrack is a Distributed DPP System Service enabling economic operators to achieve 
-                compliance with EU Battery Regulation (2023/1542) and CBAM.
+                compliance with EU Battery Regulation (2023/1542) DBP mandate and CBAM.
               </div>
             </div>
             <div>
