@@ -15,49 +15,53 @@ export const Logo: React.FC<LogoProps> = ({ className = "", size = 40 }) => {
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      {/* Interlocked T's forming a data block */}
-      {/* First T - positioned left */}
-      <path
-        d="M8 8H22V12H17V32H13V12H8V8Z"
-        fill="currentColor"
-        opacity="0.9"
-      />
-      
-      {/* Second T - positioned right, interlocking */}
-      <path
-        d="M18 8H32V12H27V32H23V12H18V8Z"
-        fill="currentColor"
-        opacity="0.9"
-      />
-      
-      {/* Interlocking connection - the horizontal bars merge */}
-      <rect
-        x="13"
-        y="8"
-        width="14"
-        height="4"
-        fill="currentColor"
-        opacity="1"
-      />
-      
-      {/* Data block outline - subtle border around the merged form */}
-      <rect
-        x="7"
-        y="7"
-        width="26"
-        height="26"
+      {/* Circular tracking path - represents circularity and continuous monitoring */}
+      <circle
+        cx="20"
+        cy="20"
+        r="16"
         fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeDasharray="4 4"
+        opacity="0.4"
+      />
+      
+      {/* Central trust anchor - hexagonal shape for stability */}
+      <path
+        d="M20 8L28 12V20L20 24L12 20V12L20 8Z"
+        fill="currentColor"
+        opacity="0.2"
+        stroke="currentColor"
+        strokeWidth="1.5"
+      />
+      
+      {/* Inner verification symbol - checkmark for trust */}
+      <path
+        d="M16 18L19 21L24 16"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      
+      {/* Tracking nodes - data points around the circle */}
+      <circle cx="20" cy="4" r="2" fill="currentColor" opacity="0.6" />
+      <circle cx="32" cy="12" r="2" fill="currentColor" opacity="0.6" />
+      <circle cx="32" cy="28" r="2" fill="currentColor" opacity="0.6" />
+      <circle cx="20" cy="36" r="2" fill="currentColor" opacity="0.6" />
+      <circle cx="8" cy="28" r="2" fill="currentColor" opacity="0.6" />
+      <circle cx="8" cy="12" r="2" fill="currentColor" opacity="0.6" />
+      
+      {/* Connection lines - showing data flow */}
+      <path
+        d="M20 6L30 14M30 14L30 26M30 26L20 34M20 34L10 26M10 26L10 14M10 14L20 6"
         stroke="currentColor"
         strokeWidth="1"
         opacity="0.3"
-        rx="2"
+        fill="none"
       />
-      
-      {/* Trust indicators - small dots at corners */}
-      <circle cx="10" cy="10" r="1.5" fill="currentColor" opacity="0.6" />
-      <circle cx="30" cy="10" r="1.5" fill="currentColor" opacity="0.6" />
-      <circle cx="10" cy="30" r="1.5" fill="currentColor" opacity="0.6" />
-      <circle cx="30" cy="30" r="1.5" fill="currentColor" opacity="0.6" />
     </svg>
   );
 };
