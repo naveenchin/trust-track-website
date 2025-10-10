@@ -714,9 +714,9 @@ Best regards`);
             <div>
               <h3 className="text-white font-medium mb-6">Products</h3>
               <ul className="space-y-3">
-                <li><a href="#products" className="text-gray-400 hover:text-gray-300 transition-colors">DBP Platform</a></li>
-                <li><a href="#products" className="text-gray-400 hover:text-gray-300 transition-colors">CBAM Reporter</a></li>
-                <li><a href="#products" className="text-gray-400 hover:text-gray-300 transition-colors">ESG Platform</a></li>
+                <li><button onClick={() => handleNavigation('products')} className="text-gray-400 hover:text-gray-300 transition-colors text-left">DBP Platform</button></li>
+                <li><button onClick={() => handleNavigation('products')} className="text-gray-400 hover:text-gray-300 transition-colors text-left">CBAM Reporter</button></li>
+                <li><button onClick={() => handleNavigation('products')} className="text-gray-400 hover:text-gray-300 transition-colors text-left">ESG Platform</button></li>
                 <li><a href="#technology" className="text-gray-400 hover:text-gray-300 transition-colors">Technology</a></li>
               </ul>
             </div>
