@@ -407,8 +407,8 @@ Best regards`);
                     </div>
                     <h4 className="text-lg font-medium text-gray-900 mb-6">QR Code → Battery Passport</h4>
                     <img 
-                      src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://trusttrack.io" 
-                      alt="QR Code linking to TrustTrack"
+                      src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://trusttrack.io/dbp.html" 
+                      alt="QR Code linking to Digital Battery Passport"
                       className="w-full h-full object-contain rounded-lg"
                     />
                     <div className="space-y-4 text-sm">
