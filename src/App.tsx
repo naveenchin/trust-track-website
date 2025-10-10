@@ -407,7 +407,11 @@ Best regards`);
                     </div>
                     <h4 className="text-lg font-medium text-gray-900 mb-6">QR Code → Battery Passport</h4>
                     <div className="w-24 h-24 bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg mx-auto mb-4 flex items-center justify-center">
-                      <div className="text-xs text-gray-500 text-center">QR<br/>Code</div>
+                      <img 
+                        src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://trusttrack.io" 
+                        alt="QR Code linking to TrustTrack"
+                        className="w-full h-full object-contain rounded-lg"
+                      />
                     </div>
                     <div className="space-y-4 text-sm">
                       <div className="flex justify-between items-center py-2 border-b border-gray-200">
@@ -703,8 +707,8 @@ Best regards`);
                 <span className="font-medium text-xl text-white">TrustTrack</span>
               </div>
               <p className="text-gray-400 mb-6 max-w-md leading-relaxed">
-                The Blockchain Layer for Global Supply Chain Compliance. Distributed ledger technology platform 
-                for Digital Battery Passports, CBAM reporting, and ESG compliance with immutable audit trails.
+                The Immutable Layer for Global Supply Chain Compliance. Blockchain-powered platform 
+                for Digital Battery Passports, CBAM reporting, and ESG compliance.
               </p>
               <div className="text-xs text-gray-500 leading-relaxed">
                 TrustTrack is a Distributed DPP System Service enabling economic operators to achieve 
