@@ -703,8 +703,8 @@ Best regards`);
                 <span className="font-medium text-xl text-white">TrustTrack</span>
               </div>
               <p className="text-gray-400 mb-6 max-w-md leading-relaxed">
-                The Immutable Layer for Global Supply Chain Compliance. Blockchain-powered platform 
-                for Digital Battery Passports, CBAM reporting, and ESG compliance.
+                The Blockchain Layer for Global Supply Chain Compliance. Distributed ledger technology platform 
+                for Digital Battery Passports, CBAM reporting, and ESG compliance with immutable audit trails.
               </p>
               <div className="text-xs text-gray-500 leading-relaxed">
                 TrustTrack is a Distributed DPP System Service enabling economic operators to achieve 
@@ -714,9 +714,9 @@ Best regards`);
             <div>
               <h3 className="text-white font-medium mb-6">Products</h3>
               <ul className="space-y-3">
-                <li><button onClick={() => handleNavigation('products')} className="text-gray-400 hover:text-gray-300 transition-colors text-left">DBP Platform</button></li>
-                <li><button onClick={() => handleNavigation('products')} className="text-gray-400 hover:text-gray-300 transition-colors text-left">CBAM Reporter</button></li>
-                <li><button onClick={() => handleNavigation('products')} className="text-gray-400 hover:text-gray-300 transition-colors text-left">ESG Platform</button></li>
+                <li><a href="#products" className="text-gray-400 hover:text-gray-300 transition-colors">DBP Platform</a></li>
+                <li><a href="#products" className="text-gray-400 hover:text-gray-300 transition-colors">CBAM Reporter</a></li>
+                <li><a href="#products" className="text-gray-400 hover:text-gray-300 transition-colors">ESG Platform</a></li>
                 <li><a href="#technology" className="text-gray-400 hover:text-gray-300 transition-colors">Technology</a></li>
               </ul>
             </div>

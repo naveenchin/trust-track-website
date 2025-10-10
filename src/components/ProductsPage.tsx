@@ -346,8 +346,8 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onContactDemo }) => 
             <span className="font-medium">Your Digital Product Passports?</span>
           </h2>
           <p className="text-xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
-            Start creating unique QR codes for your products today. Each QR links to comprehensive 
-            digital passport data with blockchain-verified compliance information.
+            Start creating unique blockchain-secured QR codes for your products today. Each QR links to comprehensive 
+            digital passport data with blockchain-verified compliance information and immutable audit trails.
           </p>
           <button 
             onClick={onContactDemo}
