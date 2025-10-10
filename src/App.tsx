@@ -39,7 +39,7 @@ Please let me know your availability.
 
 Best regards`);
     
-    const mailtoLink = `mailto:compliance@trusttrack.io?subject=${subject}&body=${body}`;
+    const mailtoLink = `mailto:naveen@trusttrack.io?subject=${subject}&body=${body}`;
     window.location.href = mailtoLink;
   };
 
