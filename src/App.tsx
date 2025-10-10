@@ -198,16 +198,16 @@ Best regards`);
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
             <div className="lg:col-span-7">
               <div className="text-emerald-600 font-medium text-sm mb-6 tracking-wide uppercase">
-                API-First • Developer-Friendly • Audit-Ready
+                Integration-Ready • Developer-Friendly • Audit-Ready
               </div>
               <h1 className="text-5xl lg:text-6xl font-light text-gray-900 mb-8 leading-tight">
-                API-First Platform for
+                Digital Platform for
                 <br />
                 <span className="font-medium">Digital Product Passports</span>
               </h1>
               <p className="text-xl text-gray-600 mb-10 leading-relaxed max-w-2xl">
-                TrustTrack provides RESTful APIs to generate unique QR codes for Digital Product Passports. 
-                Integrate with your existing ERP, MES, and LIMS systems. Specialized APIs for Digital Battery 
+                TrustTrack generates unique QR codes for Digital Product Passports with seamless integration 
+                capabilities for your existing ERP, MES, and LIMS systems. Specialized solutions for Digital Battery 
                 Passports (DBP), CBAM compliance, and ESG reporting with blockchain-verified data integrity.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
