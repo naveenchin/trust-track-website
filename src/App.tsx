@@ -184,7 +184,7 @@ Best regards`);
                 <span className="font-medium">Simplified.</span>
               </h1>
               <p className="text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl">
-                TrustTrack powers your Digital Battery Passports, CBAM Reporting & ESG Compliance. 
+                TrustTrack powers your Digital Battery Passports & CBAM Reporting. 
                 Eliminate audit risk and operational complexity with our blockchain-based platform 
                 providing immutable, audit-ready data.
               </p>
@@ -286,17 +286,6 @@ Best regards`);
                 <p className="text-slate-600 leading-relaxed">{point.description}</p>
               </div>
             ))}
-          </div>
-
-          <div className="mt-16 text-center">
-            <div className="bg-white border border-slate-200 p-8 max-w-4xl mx-auto">
-              <h3 className="text-2xl font-medium text-slate-900 mb-4">The ESG Reporting Challenge</h3>
-              <p className="text-slate-600 leading-relaxed">
-                With the EU Corporate Sustainability Reporting Directive (CSRD) and growing investor demands, 
-                organizations need verifiable ESG data. Traditional reporting methods lack the transparency 
-                and immutability required for credible sustainability claims.
-              </p>
-            </div>
           </div>
         </div>
       </section>
