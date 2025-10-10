@@ -440,9 +440,11 @@ Best regards`);
                       <Globe className="h-8 w-8 text-white" />
                     </div>
                     <h4 className="text-lg font-medium text-gray-900 mb-6">ESG Dashboard</h4>
-                    <div className="w-24 h-24 bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg mx-auto mb-4 flex items-center justify-center">
-                      <div className="text-xs text-gray-500 text-center">QR<br/>Code</div>
-                    </div>
+                    <img 
+                      src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://trusttrack.io" 
+                      alt="QR Code linking to TrustTrack"
+                      className="w-24 h-24 mx-auto mb-4 border border-gray-200 rounded-lg"
+                    />
                     <div className="space-y-4 text-sm">
                       <div className="bg-gray-50 border border-gray-200 rounded-xl p-4">
                         <div className="flex justify-between items-center">
@@ -509,9 +511,11 @@ Best regards`);
                       <Factory className="h-8 w-8 text-white" />
                     </div>
                     <h4 className="text-lg font-medium text-gray-900 mb-6">CBAM Report</h4>
-                    <div className="w-24 h-24 bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg mx-auto mb-4 flex items-center justify-center">
-                      <div className="text-xs text-gray-500 text-center">QR<br/>Code</div>
-                    </div>
+                    <img 
+                      src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://trusttrack.io" 
+                      alt="QR Code linking to TrustTrack"
+                      className="w-24 h-24 mx-auto mb-4 border border-gray-200 rounded-lg"
+                    />
                     <div className="space-y-4 text-sm">
                       <div className="bg-gray-50 border border-gray-200 rounded-xl p-4">
                         <div className="flex justify-between items-center">
