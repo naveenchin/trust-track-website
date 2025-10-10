@@ -373,7 +373,7 @@ Best regards`);
                     Mandated by Feb 2027
                   </div>
                   <h3 className="text-3xl font-light text-gray-900 mb-6">
-                    Battery Digital Passport
+                    Digital Battery Passport
                     <br />
                     <span className="font-medium">(DBP) QR Generator</span>
                   </h3>
