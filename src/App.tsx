@@ -16,7 +16,9 @@ import {
   Users,
   Calendar,
   Mail,
-  Phone
+  Phone,
+  Circle,
+  Hexagon
 } from 'lucide-react';
 import { Logo } from './components/Logo';
 
@@ -116,34 +118,34 @@ Best regards`);
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-slate-50">
       {/* Navigation */}
-      <nav className="bg-white shadow-lg sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16">
+      <nav className="bg-white/95 backdrop-blur-sm border-b border-slate-200/60 sticky top-0 z-50">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+          <div className="flex justify-between h-20">
             <div className="flex items-center">
               <div className="flex-shrink-0 flex items-center">
-                <Logo className="h-10 w-10 text-[#1D2B3F] mr-3" size={40} />
-                <span className="font-bold text-2xl text-[#1D2B3F]">TrustTrack</span>
+                <Logo className="h-11 w-11 text-slate-800 mr-4" size={44} />
+                <span className="font-semibold text-2xl text-slate-800 tracking-tight">TrustTrack</span>
               </div>
             </div>
             
-            <div className="hidden md:flex items-center space-x-8">
-              <a href="#products" className="text-gray-700 hover:text-[#C7A500] px-3 py-2 text-sm font-medium">Products</a>
-              <a href="#technology" className="text-gray-700 hover:text-[#C7A500] px-3 py-2 text-sm font-medium">Technology</a>
-              <a href="#contact" className="text-gray-700 hover:text-[#C7A500] px-3 py-2 text-sm font-medium">Contact</a>
+            <div className="hidden md:flex items-center space-x-10">
+              <a href="#products" className="text-slate-600 hover:text-slate-900 font-medium transition-colors">Products</a>
+              <a href="#technology" className="text-slate-600 hover:text-slate-900 font-medium transition-colors">Technology</a>
+              <a href="#contact" className="text-slate-600 hover:text-slate-900 font-medium transition-colors">Contact</a>
               <button 
                 onClick={handleContactDemo}
-                className="bg-[#00A878] text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-[#008A66] transition duration-200"
+                className="bg-slate-900 text-white px-7 py-3 font-medium hover:bg-slate-800 transition-colors border border-slate-900"
               >
-                Request Compliance Demo
+                Request Demo
               </button>
             </div>
 
             <div className="md:hidden flex items-center">
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="text-gray-700 hover:text-[#C7A500]"
+                className="text-slate-600 hover:text-slate-900"
               >
                 {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
               </button>
@@ -152,16 +154,16 @@ Best regards`);
         </div>
 
         {mobileMenuOpen && (
-          <div className="md:hidden bg-white shadow-lg">
-            <div className="px-2 pt-2 pb-3 space-y-1">
-              <a href="#products" className="block px-3 py-2 text-gray-700 hover:text-[#C7A500]">Products</a>
-              <a href="#technology" className="block px-3 py-2 text-gray-700 hover:text-[#C7A500]">Technology</a>
-              <a href="#contact" className="block px-3 py-2 text-gray-700 hover:text-[#C7A500]">Contact</a>
+          <div className="md:hidden bg-white border-t border-slate-200">
+            <div className="px-6 py-4 space-y-3">
+              <a href="#products" className="block text-slate-600 hover:text-slate-900 font-medium">Products</a>
+              <a href="#technology" className="block text-slate-600 hover:text-slate-900 font-medium">Technology</a>
+              <a href="#contact" className="block text-slate-600 hover:text-slate-900 font-medium">Contact</a>
               <button 
                 onClick={handleContactDemo}
-                className="block px-3 py-2 bg-[#00A878] text-white rounded-lg hover:bg-[#008A66] w-full text-left"
+                className="block w-full text-left bg-slate-900 text-white px-7 py-3 font-medium hover:bg-slate-800 transition-colors"
               >
-                Request Compliance Demo
+                Request Demo
               </button>
             </div>
           </div>
@@ -169,58 +171,94 @@ Best regards`);
       </nav>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#1D2B3F] to-[#2a3a52] py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="text-[#00A878] font-semibold text-lg mb-4">
-                The Immutable Layer for Global Supply Chain Compliance
+      <section className="bg-white py-24 lg:py-32">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+            <div className="lg:col-span-7">
+              <div className="text-slate-600 font-medium text-lg mb-6 tracking-wide">
+                THE IMMUTABLE LAYER FOR GLOBAL SUPPLY CHAIN COMPLIANCE
               </div>
-              <h1 className="text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
-                EU Compliance, Simplified. 
-                <span className="text-[#C7A500]"> TrustTrack powers your Digital Battery Passports & CBAM Reporting.</span>
+              <h1 className="text-5xl lg:text-6xl font-light text-slate-900 mb-8 leading-tight tracking-tight">
+                EU Compliance,
+                <br />
+                <span className="font-medium">Simplified.</span>
               </h1>
-              <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                Eliminate audit risk and operational complexity. Our blockchain-based platform provides immutable, 
-                audit-ready data for the world's most demanding compliance mandates.
+              <p className="text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl">
+                TrustTrack powers your Digital Battery Passports & CBAM Reporting. 
+                Eliminate audit risk and operational complexity with our blockchain-based platform 
+                providing immutable, audit-ready data.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-5">
                 <button 
                   onClick={handleContactDemo}
-                  className="bg-[#00A878] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#008A66] transition duration-200 text-center inline-flex items-center justify-center"
+                  className="bg-slate-900 text-white px-8 py-4 font-medium hover:bg-slate-800 transition-colors inline-flex items-center justify-center group"
                 >
                   Request a Compliance Demo
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </button>
                 <a 
                   href="#technology"
-                  className="border-2 border-[#C7A500] text-[#C7A500] px-8 py-4 rounded-lg font-semibold hover:bg-[#C7A500] hover:text-white transition duration-200 text-center"
+                  className="border border-slate-300 text-slate-700 px-8 py-4 font-medium hover:border-slate-400 hover:bg-slate-50 transition-colors text-center"
                 >
-                  Explore Our Technology
+                  Explore Technology
                 </a>
               </div>
-              <div className="mt-8 text-sm text-gray-400">
-                <span className="font-semibold text-[#00A878]">Authenticity. Accountability. Audit-Ready.</span>
+              <div className="mt-12 text-sm text-slate-500 font-medium tracking-wide">
+                AUTHENTICITY • ACCOUNTABILITY • AUDIT-READY
               </div>
             </div>
-            <div className="relative">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl shadow-2xl p-8 border border-white/20">
-                <div className="flex items-center mb-6">
-                  <Shield className="h-8 w-8 text-[#00A878] mr-3" />
-                  <span className="font-semibold text-white text-lg">Compliance Dashboard</span>
+            <div className="lg:col-span-5">
+              <div className="relative">
+                {/* Geometric visualization */}
+                <div className="bg-slate-50 border border-slate-200 p-12 relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-slate-100/50 to-transparent"></div>
+                  
+                  {/* Central tracking circle */}
+                  <div className="relative z-10 flex items-center justify-center">
+                    <div className="w-48 h-48 border-2 border-slate-300 rounded-full relative flex items-center justify-center">
+                      {/* Inner elements representing data points */}
+                      <div className="w-32 h-32 border border-slate-400 rounded-full flex items-center justify-center">
+                        <div className="w-16 h-16 bg-slate-900 rounded-full flex items-center justify-center">
+                          <Lock className="h-8 w-8 text-white" />
+                        </div>
+                      </div>
+                      
+                      {/* Tracking points around the circle */}
+                      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-2">
+                        <div className="w-4 h-4 bg-slate-600 rounded-full"></div>
+                      </div>
+                      <div className="absolute top-1/2 right-0 transform translate-x-2 -translate-y-1/2">
+                        <div className="w-4 h-4 bg-slate-600 rounded-full"></div>
+                      </div>
+                      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-2">
+                        <div className="w-4 h-4 bg-slate-600 rounded-full"></div>
+                      </div>
+                      <div className="absolute top-1/2 left-0 transform -translate-x-2 -translate-y-1/2">
+                        <div className="w-4 h-4 bg-slate-600 rounded-full"></div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Corner elements */}
+                  <div className="absolute top-4 left-4 w-3 h-3 border-l-2 border-t-2 border-slate-400"></div>
+                  <div className="absolute top-4 right-4 w-3 h-3 border-r-2 border-t-2 border-slate-400"></div>
+                  <div className="absolute bottom-4 left-4 w-3 h-3 border-l-2 border-b-2 border-slate-400"></div>
+                  <div className="absolute bottom-4 right-4 w-3 h-3 border-r-2 border-b-2 border-slate-400"></div>
                 </div>
-                <div className="space-y-4">
-                  <div className="flex items-center justify-between p-4 bg-[#00A878]/20 rounded-lg border border-[#00A878]/30">
-                    <span className="text-sm font-medium text-white">DBP Compliance Ready</span>
-                    <CheckCircle className="h-5 w-5 text-[#00A878]" />
+                
+                {/* Status indicators */}
+                <div className="mt-8 space-y-4">
+                  <div className="flex items-center justify-between p-4 bg-white border border-slate-200">
+                    <span className="text-sm font-medium text-slate-700">DBP Compliance Ready</span>
+                    <div className="w-3 h-3 bg-slate-900 rounded-full"></div>
                   </div>
-                  <div className="flex items-center justify-between p-4 bg-[#C7A500]/20 rounded-lg border border-[#C7A500]/30">
-                    <span className="text-sm font-medium text-white">CBAM Reports Generated</span>
-                    <FileCheck className="h-5 w-5 text-[#C7A500]" />
+                  <div className="flex items-center justify-between p-4 bg-white border border-slate-200">
+                    <span className="text-sm font-medium text-slate-700">CBAM Reports Generated</span>
+                    <div className="w-3 h-3 bg-slate-900 rounded-full"></div>
                   </div>
-                  <div className="flex items-center justify-between p-4 bg-white/10 rounded-lg border border-white/20">
-                    <span className="text-sm font-medium text-white">Audit Trail Verified</span>
-                    <Lock className="h-5 w-5 text-white" />
+                  <div className="flex items-center justify-between p-4 bg-white border border-slate-200">
+                    <span className="text-sm font-medium text-slate-700">Audit Trail Verified</span>
+                    <div className="w-3 h-3 bg-slate-900 rounded-full"></div>
                   </div>
                 </div>
               </div>
@@ -230,19 +268,22 @@ Best regards`);
       </section>
 
       {/* Problem Section */}
-      <section className="bg-[#F9FAFB] py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-[#1D2B3F] mb-4">
-              The Compliance Gap: Why Spreadsheets Fail Audits
+      <section className="bg-slate-50 py-24">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl lg:text-5xl font-light text-slate-900 mb-6 tracking-tight">
+              The Compliance Gap:
+              <br />
+              <span className="font-medium">Why Spreadsheets Fail Audits</span>
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {problemPoints.map((point, index) => (
-              <div key={index} className="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-red-500">
-                <h3 className="text-xl font-semibold text-[#1D2B3F] mb-4">{point.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{point.description}</p>
+              <div key={index} className="bg-white border border-slate-200 p-8 relative">
+                <div className="absolute top-0 left-0 w-1 h-full bg-slate-900"></div>
+                <h3 className="text-xl font-medium text-slate-900 mb-4">{point.title}</h3>
+                <p className="text-slate-600 leading-relaxed">{point.description}</p>
               </div>
             ))}
           </div>
@@ -250,24 +291,32 @@ Best regards`);
       </section>
 
       {/* Solution Section */}
-      <section className="bg-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-[#1D2B3F] mb-4">
-              TrustTrack: The Immutable, Audit-Ready Solution
+      <section className="bg-white py-24">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl lg:text-5xl font-light text-slate-900 mb-6 tracking-tight">
+              TrustTrack:
+              <br />
+              <span className="font-medium">The Immutable, Audit-Ready Solution</span>
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {solutionFeatures.map((feature, index) => {
               const IconComponent = feature.icon;
               return (
-                <div key={index} className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-200 border border-gray-100">
-                  <div className="inline-flex p-4 rounded-xl bg-[#00A878]/10 text-[#00A878] mb-6">
-                    <IconComponent className="h-8 w-8" />
+                <div key={index} className="border border-slate-200 p-8 hover:border-slate-300 transition-colors">
+                  <div className="flex items-start space-x-6">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-slate-100 flex items-center justify-center">
+                        <IconComponent className="h-6 w-6 text-slate-700" />
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-medium text-slate-900 mb-3">{feature.title}</h3>
+                      <p className="text-slate-600 leading-relaxed">{feature.description}</p>
+                    </div>
                   </div>
-                  <h3 className="text-xl font-semibold text-[#1D2B3F] mb-4">{feature.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{feature.description}</p>
                 </div>
               );
             })}
@@ -276,65 +325,71 @@ Best regards`);
       </section>
 
       {/* Product Suite Section */}
-      <section id="products" className="bg-[#F9FAFB] py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-[#1D2B3F] mb-4">
-              Our Products: Compliance-as-a-Service for Critical Mandates
+      <section id="products" className="bg-slate-50 py-24">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl lg:text-5xl font-light text-slate-900 mb-6 tracking-tight">
+              Our Products:
+              <br />
+              <span className="font-medium">Compliance-as-a-Service for Critical Mandates</span>
             </h2>
           </div>
 
           {/* DBP Platform */}
-          <div className="mb-16">
-            <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="mb-20">
+            <div className="bg-white border border-slate-200 p-12">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <div>
-                  <div className="inline-flex items-center bg-[#C7A500]/10 text-[#C7A500] px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                  <div className="inline-flex items-center border border-slate-300 text-slate-700 px-4 py-2 text-sm font-medium mb-6">
                     <Battery className="h-4 w-4 mr-2" />
                     Mandated by Feb 2027
                   </div>
-                  <h3 className="text-2xl lg:text-3xl font-bold text-[#1D2B3F] mb-4">
-                    Digital Battery Passport (DBP) Platform
+                  <h3 className="text-3xl font-light text-slate-900 mb-6 tracking-tight">
+                    Digital Battery Passport
+                    <br />
+                    <span className="font-medium">(DBP) Platform</span>
                   </h3>
-                  <p className="text-lg text-gray-600 mb-6">
+                  <p className="text-lg text-slate-600 mb-8 leading-relaxed">
                     Mandated by EU Battery Regulation (2023/1542) by Feb 2027. Enables Data Sovereignty, 
                     Semantic Interoperability, and Tiered Access Control.
                   </p>
-                  <div className="space-y-4">
+                  <div className="space-y-6">
                     {dbpFeatures.map((feature, index) => {
                       const IconComponent = feature.icon;
                       return (
                         <div key={index} className="flex items-start space-x-4">
                           <div className="flex-shrink-0">
-                            <div className="inline-flex p-2 rounded-lg bg-[#00A878]/10 text-[#00A878]">
-                              <IconComponent className="h-5 w-5" />
+                            <div className="w-8 h-8 bg-slate-100 flex items-center justify-center">
+                              <IconComponent className="h-4 w-4 text-slate-700" />
                             </div>
                           </div>
                           <div>
-                            <h4 className="font-semibold text-[#1D2B3F] mb-1">{feature.title}</h4>
-                            <p className="text-gray-600 text-sm">{feature.description}</p>
+                            <h4 className="font-medium text-slate-900 mb-1">{feature.title}</h4>
+                            <p className="text-slate-600 text-sm leading-relaxed">{feature.description}</p>
                           </div>
                         </div>
                       );
                     })}
                   </div>
                 </div>
-                <div className="bg-gradient-to-br from-[#C7A500]/10 to-[#00A878]/10 rounded-2xl p-8">
+                <div className="bg-slate-50 border border-slate-200 p-8">
                   <div className="text-center">
-                    <Battery className="h-16 w-16 text-[#C7A500] mx-auto mb-4" />
-                    <h4 className="text-lg font-semibold text-[#1D2B3F] mb-2">Battery Passport</h4>
-                    <div className="space-y-2 text-sm text-gray-600">
-                      <div className="flex justify-between">
-                        <span>Unique ID:</span>
-                        <span className="font-mono">BP-2024-001</span>
+                    <div className="w-16 h-16 bg-slate-200 mx-auto mb-6 flex items-center justify-center">
+                      <Battery className="h-8 w-8 text-slate-700" />
+                    </div>
+                    <h4 className="text-lg font-medium text-slate-900 mb-6">Battery Passport</h4>
+                    <div className="space-y-4 text-sm">
+                      <div className="flex justify-between items-center py-2 border-b border-slate-200">
+                        <span className="text-slate-600">Unique ID:</span>
+                        <span className="font-mono text-slate-900">BP-2024-001</span>
                       </div>
-                      <div className="flex justify-between">
-                        <span>Carbon Footprint:</span>
-                        <span className="text-[#00A878] font-semibold">Verified ✓</span>
+                      <div className="flex justify-between items-center py-2 border-b border-slate-200">
+                        <span className="text-slate-600">Carbon Footprint:</span>
+                        <span className="text-slate-900 font-medium">Verified ✓</span>
                       </div>
-                      <div className="flex justify-between">
-                        <span>State of Health:</span>
-                        <span className="text-[#C7A500] font-semibold">92%</span>
+                      <div className="flex justify-between items-center py-2">
+                        <span className="text-slate-600">State of Health:</span>
+                        <span className="text-slate-900 font-medium">92%</span>
                       </div>
                     </div>
                   </div>
@@ -345,56 +400,60 @@ Best regards`);
 
           {/* CBAM Reporter */}
           <div>
-            <div className="bg-white rounded-2xl shadow-xl p-8 lg:p-12">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div className="bg-gradient-to-br from-[#1D2B3F]/10 to-[#C7A500]/10 rounded-2xl p-8">
+            <div className="bg-white border border-slate-200 p-12">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div className="bg-slate-50 border border-slate-200 p-8">
                   <div className="text-center">
-                    <Factory className="h-16 w-16 text-[#1D2B3F] mx-auto mb-4" />
-                    <h4 className="text-lg font-semibold text-[#1D2B3F] mb-4">CBAM Report</h4>
-                    <div className="space-y-3 text-sm">
-                      <div className="bg-white rounded-lg p-3">
+                    <div className="w-16 h-16 bg-slate-200 mx-auto mb-6 flex items-center justify-center">
+                      <Factory className="h-8 w-8 text-slate-700" />
+                    </div>
+                    <h4 className="text-lg font-medium text-slate-900 mb-6">CBAM Report</h4>
+                    <div className="space-y-4 text-sm">
+                      <div className="bg-white border border-slate-200 p-4">
                         <div className="flex justify-between items-center">
-                          <span className="text-gray-600">Steel Import</span>
-                          <span className="text-[#00A878] font-semibold">€15,420</span>
+                          <span className="text-slate-600">Steel Import</span>
+                          <span className="text-slate-900 font-medium">€15,420</span>
                         </div>
                       </div>
-                      <div className="bg-white rounded-lg p-3">
+                      <div className="bg-white border border-slate-200 p-4">
                         <div className="flex justify-between items-center">
-                          <span className="text-gray-600">Cement Import</span>
-                          <span className="text-[#00A878] font-semibold">€8,750</span>
+                          <span className="text-slate-600">Cement Import</span>
+                          <span className="text-slate-900 font-medium">€8,750</span>
                         </div>
                       </div>
-                      <div className="text-xs text-gray-500 mt-2">
+                      <div className="text-xs text-slate-500 mt-4">
                         Saves €20k–100k/year vs. consultants
                       </div>
                     </div>
                   </div>
                 </div>
                 <div>
-                  <div className="inline-flex items-center bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                  <div className="inline-flex items-center border border-red-300 text-red-700 px-4 py-2 text-sm font-medium mb-6">
                     <Calendar className="h-4 w-4 mr-2" />
                     High urgency for 2026
                   </div>
-                  <h3 className="text-2xl lg:text-3xl font-bold text-[#1D2B3F] mb-4">
-                    Carbon Border Adjustment Mechanism (CBAM) Reporter
+                  <h3 className="text-3xl font-light text-slate-900 mb-6 tracking-tight">
+                    Carbon Border Adjustment
+                    <br />
+                    <span className="font-medium">Mechanism (CBAM) Reporter</span>
                   </h3>
-                  <p className="text-lg text-gray-600 mb-6">
+                  <p className="text-lg text-slate-600 mb-8 leading-relaxed">
                     High urgency for EU importers of Cement, Lime, Steel, Aluminum. 
                     Saves €20k–100k/year vs. consultants and eliminates manual reporting pain.
                   </p>
-                  <div className="space-y-4">
+                  <div className="space-y-6">
                     {cbamFeatures.map((feature, index) => {
                       const IconComponent = feature.icon;
                       return (
                         <div key={index} className="flex items-start space-x-4">
                           <div className="flex-shrink-0">
-                            <div className="inline-flex p-2 rounded-lg bg-[#C7A500]/10 text-[#C7A500]">
-                              <IconComponent className="h-5 w-5" />
+                            <div className="w-8 h-8 bg-slate-100 flex items-center justify-center">
+                              <IconComponent className="h-4 w-4 text-slate-700" />
                             </div>
                           </div>
                           <div>
-                            <h4 className="font-semibold text-[#1D2B3F] mb-1">{feature.title}</h4>
-                            <p className="text-gray-600 text-sm">{feature.description}</p>
+                            <h4 className="font-medium text-slate-900 mb-1">{feature.title}</h4>
+                            <p className="text-slate-600 text-sm leading-relaxed">{feature.description}</p>
                           </div>
                         </div>
                       );
@@ -408,34 +467,36 @@ Best regards`);
       </section>
 
       {/* Technology Section */}
-      <section id="technology" className="bg-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-[#1D2B3F] mb-4">
-              Built on Trust: The Distributed Ledger Advantage
+      <section id="technology" className="bg-white py-24">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl lg:text-5xl font-light text-slate-900 mb-6 tracking-tight">
+              Built on Trust:
+              <br />
+              <span className="font-medium">The Distributed Ledger Advantage</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
               TrustTrack is built on enterprise-grade blockchain technology to meet the rigorous data integrity and sovereignty requirements of the Digital Product Passport (DBP) standard.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <div className="bg-gradient-to-br from-[#00A878]/10 to-[#C7A500]/10 rounded-2xl p-8">
-              <div className="inline-flex p-4 rounded-xl bg-[#00A878]/20 text-[#00A878] mb-6">
-                <Lock className="h-8 w-8" />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div className="border border-slate-200 p-10">
+              <div className="w-12 h-12 bg-slate-100 flex items-center justify-center mb-8">
+                <Lock className="h-6 w-6 text-slate-700" />
               </div>
-              <h3 className="text-2xl font-bold text-[#1D2B3F] mb-4">Data Integrity & Traceability</h3>
-              <p className="text-gray-600 leading-relaxed">
+              <h3 className="text-2xl font-medium text-slate-900 mb-6">Data Integrity & Traceability</h3>
+              <p className="text-slate-600 leading-relaxed">
                 The shared ledger stores only the cryptographic proof (hash) of your data, guaranteeing authenticity 
                 and making it impossible to tamper with the history.
               </p>
             </div>
-            <div className="bg-gradient-to-br from-[#1D2B3F]/10 to-[#C7A500]/10 rounded-2xl p-8">
-              <div className="inline-flex p-4 rounded-xl bg-[#C7A500]/20 text-[#C7A500] mb-6">
-                <Database className="h-8 w-8" />
+            <div className="border border-slate-200 p-10">
+              <div className="w-12 h-12 bg-slate-100 flex items-center justify-center mb-8">
+                <Database className="h-6 w-6 text-slate-700" />
               </div>
-              <h3 className="text-2xl font-bold text-[#1D2B3F] mb-4">Privacy by Design (Hybrid Model)</h3>
-              <p className="text-gray-600 leading-relaxed">
+              <h3 className="text-2xl font-medium text-slate-900 mb-6">Privacy by Design (Hybrid Model)</h3>
+              <p className="text-slate-600 leading-relaxed">
                 Sensitive, proprietary data (trade secrets) is stored securely off-chain in your private databases, 
                 ensuring high performance, scalability, and data sovereignty.
               </p>
@@ -445,80 +506,84 @@ Best regards`);
       </section>
 
       {/* Business Model Section */}
-      <section className="bg-[#F9FAFB] py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-[#1D2B3F] mb-4">
-              Cost-Effective Compliance, Scaled for Industry
+      <section className="bg-slate-50 py-24">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl lg:text-5xl font-light text-slate-900 mb-6 tracking-tight">
+              Cost-Effective Compliance,
+              <br />
+              <span className="font-medium">Scaled for Industry</span>
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <div className="bg-white rounded-2xl shadow-lg p-8 text-center">
-              <div className="inline-flex p-4 rounded-xl bg-[#00A878]/10 text-[#00A878] mb-6">
-                <Globe className="h-8 w-8" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div className="bg-white border border-slate-200 p-8 text-center">
+              <div className="w-12 h-12 bg-slate-100 mx-auto mb-6 flex items-center justify-center">
+                <Globe className="h-6 w-6 text-slate-700" />
               </div>
-              <h3 className="text-xl font-bold text-[#1D2B3F] mb-4">SaaS Subscription</h3>
-              <p className="text-gray-600 mb-4">Based on site complexity and volume</p>
-              <div className="text-2xl font-bold text-[#C7A500]">€3k–5k</div>
-              <div className="text-sm text-gray-500">per month per site</div>
+              <h3 className="text-xl font-medium text-slate-900 mb-4">SaaS Subscription</h3>
+              <p className="text-slate-600 mb-6">Based on site complexity and volume</p>
+              <div className="text-3xl font-light text-slate-900 mb-2">€3k–5k</div>
+              <div className="text-sm text-slate-500">per month per site</div>
             </div>
-            <div className="bg-white rounded-2xl shadow-lg p-8 text-center">
-              <div className="inline-flex p-4 rounded-xl bg-[#C7A500]/10 text-[#C7A500] mb-6">
-                <FileCheck className="h-8 w-8" />
+            <div className="bg-white border border-slate-200 p-8 text-center">
+              <div className="w-12 h-12 bg-slate-100 mx-auto mb-6 flex items-center justify-center">
+                <FileCheck className="h-6 w-6 text-slate-700" />
               </div>
-              <h3 className="text-xl font-bold text-[#1D2B3F] mb-4">Declaration Fee</h3>
-              <p className="text-gray-600 mb-4">Per CBAM declaration/shipment</p>
-              <div className="text-2xl font-bold text-[#C7A500]">€50–100</div>
-              <div className="text-sm text-gray-500">per shipment</div>
+              <h3 className="text-xl font-medium text-slate-900 mb-4">Declaration Fee</h3>
+              <p className="text-slate-600 mb-6">Per CBAM declaration/shipment</p>
+              <div className="text-3xl font-light text-slate-900 mb-2">€50–100</div>
+              <div className="text-sm text-slate-500">per shipment</div>
             </div>
-            <div className="bg-white rounded-2xl shadow-lg p-8 text-center">
-              <div className="inline-flex p-4 rounded-xl bg-[#1D2B3F]/10 text-[#1D2B3F] mb-6">
-                <Shield className="h-8 w-8" />
+            <div className="bg-white border border-slate-200 p-8 text-center">
+              <div className="w-12 h-12 bg-slate-100 mx-auto mb-6 flex items-center justify-center">
+                <Shield className="h-6 w-6 text-slate-700" />
               </div>
-              <h3 className="text-xl font-bold text-[#1D2B3F] mb-4">Verified Reports Add-on</h3>
-              <p className="text-gray-600 mb-4">Integration fees for official third-party verification stamps</p>
-              <div className="text-2xl font-bold text-[#C7A500]">Custom</div>
-              <div className="text-sm text-gray-500">pricing available</div>
+              <h3 className="text-xl font-medium text-slate-900 mb-4">Verified Reports Add-on</h3>
+              <p className="text-slate-600 mb-6">Integration fees for official third-party verification stamps</p>
+              <div className="text-3xl font-light text-slate-900 mb-2">Custom</div>
+              <div className="text-sm text-slate-500">pricing available</div>
             </div>
           </div>
 
           <div className="text-center">
             <button 
               onClick={handleContactDemo}
-              className="bg-[#00A878] text-white px-12 py-4 rounded-lg text-lg font-semibold hover:bg-[#008A66] transition duration-200 inline-flex items-center"
+              className="bg-slate-900 text-white px-12 py-5 text-lg font-medium hover:bg-slate-800 transition-colors inline-flex items-center group"
             >
               Ready to meet your 2027 mandate? Contact us to schedule a Pilot
-              <ArrowRight className="ml-3 h-6 w-6" />
+              <ArrowRight className="ml-4 h-6 w-6 group-hover:translate-x-1 transition-transform" />
             </button>
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="bg-[#1D2B3F] py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="contact" className="bg-slate-900 py-24">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-              Ready to Secure Your Compliance Future?
+            <h2 className="text-4xl lg:text-5xl font-light text-white mb-6 tracking-tight">
+              Ready to Secure Your
+              <br />
+              <span className="font-medium">Compliance Future?</span>
             </h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl text-slate-300 mb-12 max-w-4xl mx-auto leading-relaxed">
               Don't let compliance deadlines catch you unprepared. Schedule a demo today and see how TrustTrack 
               can eliminate your audit risk while streamlining your operations.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <button 
                 onClick={handleContactDemo}
-                className="bg-[#00A878] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#008A66] transition duration-200 inline-flex items-center justify-center"
+                className="bg-white text-slate-900 px-8 py-4 font-medium hover:bg-slate-100 transition-colors inline-flex items-center justify-center"
               >
-                <Calendar className="mr-2 h-5 w-5" />
+                <Calendar className="mr-3 h-5 w-5" />
                 Schedule Compliance Demo
               </button>
               <button 
                 onClick={handleContactDemo}
-                className="border-2 border-[#C7A500] text-[#C7A500] px-8 py-4 rounded-lg font-semibold hover:bg-[#C7A500] hover:text-white transition duration-200 inline-flex items-center justify-center"
+                className="border border-slate-600 text-slate-300 px-8 py-4 font-medium hover:border-slate-500 hover:bg-slate-800 transition-colors inline-flex items-center justify-center"
               >
-                <Mail className="mr-2 h-5 w-5" />
+                <Mail className="mr-3 h-5 w-5" />
                 Contact Sales Team
               </button>
             </div>
@@ -527,42 +592,42 @@ Best regards`);
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#1D2B3F] border-t border-gray-800 py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <footer className="bg-slate-900 border-t border-slate-800 py-16">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             <div className="col-span-1 md:col-span-2">
-              <div className="flex items-center mb-4">
-                <Logo className="h-8 w-8 text-[#C7A500] mr-2" size={32} />
-                <span className="font-bold text-xl text-white">TrustTrack</span>
+              <div className="flex items-center mb-6">
+                <Logo className="h-8 w-8 text-slate-400 mr-3" size={32} />
+                <span className="font-semibold text-xl text-white">TrustTrack</span>
               </div>
-              <p className="text-gray-400 mb-4 max-w-md">
+              <p className="text-slate-400 mb-6 max-w-md leading-relaxed">
                 The Immutable Layer for Global Supply Chain Compliance. Blockchain-powered platform 
                 for Digital Battery Passports, CBAM reporting, and ESG compliance.
               </p>
-              <div className="text-xs text-gray-500">
+              <div className="text-xs text-slate-500 leading-relaxed">
                 TrustTrack is a Distributed DPP System Service enabling economic operators to achieve 
                 compliance with EU Battery Regulation (2023/1542) and CBAM.
               </div>
             </div>
             <div>
-              <h3 className="text-white font-semibold mb-4">Products</h3>
-              <ul className="space-y-2">
-                <li><a href="#products" className="text-gray-400 hover:text-[#C7A500] transition-colors">DBP Platform</a></li>
-                <li><a href="#products" className="text-gray-400 hover:text-[#C7A500] transition-colors">CBAM Reporter</a></li>
-                <li><a href="#technology" className="text-gray-400 hover:text-[#C7A500] transition-colors">Technology</a></li>
+              <h3 className="text-white font-medium mb-6">Products</h3>
+              <ul className="space-y-3">
+                <li><a href="#products" className="text-slate-400 hover:text-slate-300 transition-colors">DBP Platform</a></li>
+                <li><a href="#products" className="text-slate-400 hover:text-slate-300 transition-colors">CBAM Reporter</a></li>
+                <li><a href="#technology" className="text-slate-400 hover:text-slate-300 transition-colors">Technology</a></li>
               </ul>
             </div>
             <div>
-              <h3 className="text-white font-semibold mb-4">Company</h3>
-              <ul className="space-y-2">
-                <li><button onClick={handleContactDemo} className="text-gray-400 hover:text-[#C7A500] transition-colors text-left">Contact</button></li>
-                <li><a href="#" className="text-gray-400 hover:text-[#C7A500] transition-colors">Support</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-[#C7A500] transition-colors">Documentation</a></li>
+              <h3 className="text-white font-medium mb-6">Company</h3>
+              <ul className="space-y-3">
+                <li><button onClick={handleContactDemo} className="text-slate-400 hover:text-slate-300 transition-colors text-left">Contact</button></li>
+                <li><a href="#" className="text-slate-400 hover:text-slate-300 transition-colors">Support</a></li>
+                <li><a href="#" className="text-slate-400 hover:text-slate-300 transition-colors">Documentation</a></li>
               </ul>
             </div>
           </div>
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-            <p className="text-gray-400">© 2025 TrustTrack. All Rights Reserved.</p>
+          <div className="border-t border-slate-800 mt-12 pt-8 text-center">
+            <p className="text-slate-400">© 2025 TrustTrack. All Rights Reserved.</p>
           </div>
         </div>
       </footer>
