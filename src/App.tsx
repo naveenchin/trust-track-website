@@ -207,7 +207,7 @@ Best regards`);
               </h1>
               <p className="text-xl text-gray-600 mb-10 leading-relaxed max-w-2xl">
                 TrustTrack generates unique QR codes for Digital Product Passports, with specialized focus on 
-                Battery Digital Passports (BDP), CBAM compliance, and ESG reporting. Each QR code links to 
+                Digital Battery Passports (DBP), CBAM compliance, and ESG reporting. Each QR code links to 
                 immutable, blockchain-verified product data that meets the world's most demanding compliance mandates.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -406,12 +406,8 @@ Best regards`);
                       <Battery className="h-8 w-8 text-white" />
                     </div>
                     <h4 className="text-lg font-medium text-gray-900 mb-6">QR Code → Battery Passport</h4>
-                    <div className="w-24 h-24 mx-auto mb-4 flex items-center justify-center">
-                      <img 
-                        src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://trusttrack.io&bgcolor=ffffff&color=000000&margin=1" 
-                        alt="QR Code to TrustTrack.io" 
-                        className="w-24 h-24 rounded-lg border border-gray-200"
-                      />
+                    <div className="w-24 h-24 bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                      <div className="text-xs text-gray-500 text-center">QR<br/>Code</div>
                     </div>
                     <div className="space-y-4 text-sm">
                       <div className="flex justify-between items-center py-2 border-b border-gray-200">
@@ -442,12 +438,8 @@ Best regards`);
                       <Globe className="h-8 w-8 text-white" />
                     </div>
                     <h4 className="text-lg font-medium text-gray-900 mb-6">ESG Dashboard</h4>
-                    <div className="w-24 h-24 mx-auto mb-4 flex items-center justify-center">
-                      <img 
-                        src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://trusttrack.io&bgcolor=ffffff&color=000000&margin=1" 
-                        alt="QR Code to TrustTrack.io" 
-                        className="w-24 h-24 rounded-lg border border-gray-200"
-                      />
+                    <div className="w-24 h-24 bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                      <div className="text-xs text-gray-500 text-center">QR<br/>Code</div>
                     </div>
                     <div className="space-y-4 text-sm">
                       <div className="bg-gray-50 border border-gray-200 rounded-xl p-4">
@@ -515,12 +507,8 @@ Best regards`);
                       <Factory className="h-8 w-8 text-white" />
                     </div>
                     <h4 className="text-lg font-medium text-gray-900 mb-6">CBAM Report</h4>
-                    <div className="w-24 h-24 mx-auto mb-4 flex items-center justify-center">
-                      <img 
-                        src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://trusttrack.io&bgcolor=ffffff&color=000000&margin=1" 
-                        alt="QR Code to TrustTrack.io" 
-                        className="w-24 h-24 rounded-lg border border-gray-200"
-                      />
+                    <div className="w-24 h-24 bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg mx-auto mb-4 flex items-center justify-center">
+                      <div className="text-xs text-gray-500 text-center">QR<br/>Code</div>
                     </div>
                     <div className="space-y-4 text-sm">
                       <div className="bg-gray-50 border border-gray-200 rounded-xl p-4">
