@@ -207,7 +207,7 @@ Best regards`);
               </h1>
               <p className="text-xl text-gray-600 mb-10 leading-relaxed max-w-2xl">
                 TrustTrack generates unique QR codes for Digital Product Passports, with specialized focus on 
-                Battery Digital Passports (BDP), CBAM compliance, and ESG reporting. Each QR code links to 
+                Digital Battery Passports (DBP), CBAM compliance, and ESG reporting. Each QR code links to 
                 immutable, blockchain-verified product data that meets the world's most demanding compliance mandates.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -359,7 +359,7 @@ Best regards`);
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Each product receives a unique QR code linking to its digital passport with specialized 
-              compliance data for batteries, carbon reporting, and sustainability metrics.
+              compliance data for Digital Battery Passports (DBP), carbon reporting, and sustainability metrics.
             </p>
           </div>
 
@@ -710,7 +710,7 @@ Best regards`);
               </div>
               <p className="text-gray-400 mb-6 max-w-md leading-relaxed">
                 The Immutable Layer for Global Supply Chain Compliance. Blockchain-powered platform 
-                for Digital Battery Passports, CBAM reporting, and ESG compliance.
+                for Digital Battery Passports (DBP), CBAM reporting, and ESG compliance.
               </p>
               <div className="text-xs text-gray-500 leading-relaxed">
                 TrustTrack is a Distributed DPP System Service enabling economic operators to achieve 
