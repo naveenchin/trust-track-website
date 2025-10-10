@@ -150,7 +150,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onContactDemo }) => 
                   </div>
                   <h3 className="text-lg font-medium text-gray-900 mb-6">QR Code → Battery Passport</h3>
                   <img 
-                    src={`https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=${window.location.origin}/dbp.html`}
+                    src={`https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://trusttrack.io/dbp`}
                     alt="QR Code linking to TrustTrack"
                     className="w-24 h-24 mx-auto mb-4 border border-gray-200 rounded-lg"
                   />
@@ -187,7 +187,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onContactDemo }) => 
                   </div>
                   <h3 className="text-lg font-medium text-gray-900 mb-6">CBAM Report</h3>
                   <img 
-                    src={`https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=${window.location.origin}/cbam.html`}
+                    src={`https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://trusttrack.io/cbam`}
                     alt="QR Code linking to TrustTrack"
                     className="w-24 h-24 mx-auto mb-4 border border-gray-200 rounded-lg"
                   />
@@ -309,7 +309,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onContactDemo }) => 
                   </div>
                   <h3 className="text-lg font-medium text-gray-900 mb-6">ESG Dashboard</h3>
                   <img 
-                    src={`https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=${window.location.origin}/esg.html`}
+                    src={`https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://trusttrack.io/esg`}
                     alt="QR Code linking to ESG Report"
                     className="w-24 h-24 mx-auto mb-4 border border-gray-200 rounded-lg"
                   />
