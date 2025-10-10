@@ -355,7 +355,7 @@ Best regards`);
             <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-6">
               Digital Product Passport Solutions:
               <br />
-              <span className="font-medium">QR-Powered Compliance for BDP, CBAM & ESG</span>
+              <span className="font-medium">QR-Powered Compliance for DBP, CBAM & ESG</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Each product receives a unique QR code linking to its digital passport with specialized 
@@ -375,7 +375,7 @@ Best regards`);
                   <h3 className="text-3xl font-light text-gray-900 mb-6">
                     Battery Digital Passport
                     <br />
-                    <span className="font-medium">(BDP) QR Generator</span>
+                    <span className="font-medium">(DBP) QR Generator</span>
                   </h3>
                   <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                     Generate QR codes for battery products mandated by EU Battery Regulation (2023/1542) by Feb 2027. 
@@ -414,7 +414,7 @@ Best regards`);
                     <div className="space-y-4 text-sm">
                       <div className="flex justify-between items-center py-2 border-b border-gray-200">
                         <span className="text-gray-600">Unique ID:</span>
-                        <span className="font-mono text-gray-900">BP-2024-001</span>
+                        <span className="font-mono text-gray-900">DBP-2024-001</span>
                       </div>
                       <div className="flex justify-between items-center py-2 border-b border-gray-200">
                         <span className="text-gray-600">Carbon Footprint:</span>
