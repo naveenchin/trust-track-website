@@ -60,9 +60,9 @@ Best regards`);
 
   const solutionFeatures = [
     {
-      icon: Circle,
-      title: 'QR Code Generation',
-      description: 'Generate unique QR codes for every product that link to comprehensive digital passports with all compliance data.',
+      icon: Database,
+      title: 'API Ready',
+      description: 'Our platform is API-first, making it easy to integrate with your existing systems and workflows for seamless digital passport creation.',
       color: 'text-blue-500'
     },
     {
@@ -201,9 +201,9 @@ Best regards`);
                 Blockchain-Powered • Audit-Ready • Compliance-First
               </div>
               <h1 className="text-5xl lg:text-6xl font-light text-gray-900 mb-8 leading-tight">
-                QR Code Generator for
+                Digital Product Passport Solutions:
                 <br />
-                <span className="font-medium">Digital Product Passports</span>
+                <span className="font-medium">Simplified</span>
               </h1>
               <p className="text-xl text-gray-600 mb-10 leading-relaxed max-w-2xl">
                 Generate unique blockchain-secured QR codes linking to immutable compliance data for 
