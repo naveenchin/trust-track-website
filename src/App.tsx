@@ -287,6 +287,17 @@ Best regards`);
               </div>
             ))}
           </div>
+
+          <div className="mt-16 text-center">
+            <div className="bg-white border border-slate-200 p-8 max-w-4xl mx-auto">
+              <h3 className="text-2xl font-medium text-slate-900 mb-4">The ESG Reporting Challenge</h3>
+              <p className="text-slate-600 leading-relaxed">
+                With the EU Corporate Sustainability Reporting Directive (CSRD) and growing investor demands, 
+                organizations need verifiable ESG data. Traditional reporting methods lack the transparency 
+                and immutability required for credible sustainability claims.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -308,8 +319,8 @@ Best regards`);
                 <div key={index} className="border border-slate-200 p-8 hover:border-slate-300 transition-colors">
                   <div className="flex items-start space-x-6">
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-slate-100 flex items-center justify-center">
-                        <IconComponent className="h-6 w-6 text-slate-700" />
+              {/* DBP Platform */}
+              <div className="mb-16">
                       </div>
                     </div>
                     <div>
@@ -397,7 +408,7 @@ Best regards`);
               </div>
             </div>
           </div>
-
+              <div className="mb-16">
           {/* CBAM Reporter */}
           <div>
             <div className="bg-white border border-slate-200 p-12">
@@ -458,6 +469,95 @@ Best regards`);
                         </div>
                       );
                     })}
+                  </div>
+                </div>
+              </div>
+
+              {/* ESG Compliance Platform */}
+              <div>
+                <div className="bg-white border border-slate-200 p-12">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                      <div className="inline-flex items-center border border-green-300 text-green-700 px-4 py-2 text-sm font-medium mb-6">
+                        <Globe className="h-4 w-4 mr-2" />
+                        Growing regulatory focus
+                      </div>
+                      <h3 className="text-3xl font-light text-slate-900 mb-6 tracking-tight">
+                        ESG Compliance
+                        <br />
+                        <span className="font-medium">& Sustainability Reporting</span>
+                      </h3>
+                      <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+                        Meet growing ESG disclosure requirements with immutable sustainability data. 
+                        Track environmental impact, social responsibility, and governance metrics across your supply chain.
+                      </p>
+                      <div className="space-y-6">
+                        <div className="flex items-start space-x-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-8 h-8 bg-slate-100 flex items-center justify-center">
+                              <Globe className="h-4 w-4 text-slate-700" />
+                            </div>
+                          </div>
+                          <div>
+                            <h4 className="font-medium text-slate-900 mb-1">Environmental Impact Tracking</h4>
+                            <p className="text-slate-600 text-sm leading-relaxed">Monitor carbon footprint, water usage, and waste metrics with immutable records</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start space-x-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-8 h-8 bg-slate-100 flex items-center justify-center">
+                              <Users className="h-4 w-4 text-slate-700" />
+                            </div>
+                          </div>
+                          <div>
+                            <h4 className="font-medium text-slate-900 mb-1">Social Responsibility Metrics</h4>
+                            <p className="text-slate-600 text-sm leading-relaxed">Track labor practices, community impact, and supplier diversity across your network</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start space-x-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-8 h-8 bg-slate-100 flex items-center justify-center">
+                              <Shield className="h-4 w-4 text-slate-700" />
+                            </div>
+                          </div>
+                          <div>
+                            <h4 className="font-medium text-slate-900 mb-1">Governance & Compliance</h4>
+                            <p className="text-slate-600 text-sm leading-relaxed">Automated ESG reporting for CSRD, TCFD, and other regulatory frameworks</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="bg-slate-50 border border-slate-200 p-8">
+                      <div className="text-center">
+                        <div className="w-16 h-16 bg-slate-200 mx-auto mb-6 flex items-center justify-center">
+                          <Globe className="h-8 w-8 text-slate-700" />
+                        </div>
+                        <h4 className="text-lg font-medium text-slate-900 mb-6">ESG Dashboard</h4>
+                        <div className="space-y-4 text-sm">
+                          <div className="bg-white border border-slate-200 p-4">
+                            <div className="flex justify-between items-center mb-2">
+                              <span className="text-slate-600">Carbon Intensity</span>
+                              <span className="text-green-600 font-medium">-12%</span>
+                            </div>
+                            <div className="w-full bg-slate-200 h-2">
+                              <div className="bg-green-500 h-2 w-3/4"></div>
+                            </div>
+                          </div>
+                          <div className="bg-white border border-slate-200 p-4">
+                            <div className="flex justify-between items-center mb-2">
+                              <span className="text-slate-600">Supplier Compliance</span>
+                              <span className="text-slate-900 font-medium">94%</span>
+                            </div>
+                            <div className="w-full bg-slate-200 h-2">
+                              <div className="bg-slate-600 h-2 w-11/12"></div>
+                            </div>
+                          </div>
+                          <div className="text-xs text-slate-500 mt-4">
+                            Real-time ESG performance tracking
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
