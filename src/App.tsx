@@ -198,17 +198,17 @@ Best regards`);
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
             <div className="lg:col-span-7">
               <div className="text-emerald-600 font-medium text-sm mb-6 tracking-wide uppercase">
-                The Immutable Layer for Global Supply Chain Compliance
+                API-First • Developer-Friendly • Audit-Ready
               </div>
               <h1 className="text-5xl lg:text-6xl font-light text-gray-900 mb-8 leading-tight">
-                Digital Product Passports,
+                API-First Platform for
                 <br />
-                <span className="font-medium">Simplified.</span>
+                <span className="font-medium">Digital Product Passports</span>
               </h1>
               <p className="text-xl text-gray-600 mb-10 leading-relaxed max-w-2xl">
-                TrustTrack generates unique QR codes for Digital Product Passports, with specialized focus on 
-                Digital Battery Passports (DBP), CBAM compliance, and ESG reporting. Each QR code links to 
-                immutable, blockchain-verified product data that meets the world's most demanding compliance mandates.
+                TrustTrack provides RESTful APIs to generate unique QR codes for Digital Product Passports. 
+                Integrate with your existing ERP, MES, and LIMS systems. Specialized APIs for Digital Battery 
+                Passports (DBP), CBAM compliance, and ESG reporting with blockchain-verified data integrity.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button 
@@ -226,7 +226,7 @@ Best regards`);
                 </a>
               </div>
               <div className="mt-12 text-xs text-emerald-600 font-medium tracking-wide uppercase">
-                Authenticity • Accountability • Audit-Ready
+                RESTful APIs • OpenAPI Documentation • Easy Integration
               </div>
             </div>
             <div className="lg:col-span-5">
@@ -315,13 +315,13 @@ Best regards`);
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-6">
-              QR-Powered Digital Passports:
+              API-First Architecture:
               <br />
-              <span className="font-medium">Scan, Verify, Comply</span>
+              <span className="font-medium">RESTful APIs for Every Function</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-12">
-              Every product gets a unique QR code that links to its comprehensive digital passport. 
-              Scan to access verified compliance data, lifecycle information, and audit trails.
+              Integrate TrustTrack's compliance APIs directly into your existing systems. Generate QR codes, 
+              create digital passports, and manage compliance data programmatically with our RESTful API suite.
             </p>
           </div>
 
@@ -579,34 +579,49 @@ Best regards`);
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-6">
-              Built on Trust:
+              Enterprise API Architecture:
               <br />
-              <span className="font-medium">The Distributed Ledger Advantage</span>
+              <span className="font-medium">Built for Integration</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              TrustTrack is built on enterprise-grade blockchain technology to meet the rigorous data integrity and sovereignty requirements of the Digital Product Passport (DBP) standard.
+              TrustTrack's API-first architecture enables seamless integration with your existing enterprise systems. 
+              RESTful endpoints with OpenAPI documentation, webhook support, and enterprise-grade security.
             </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div className="bg-white border border-gray-200 rounded-2xl p-10">
               <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-8">
-                <Lock className="h-6 w-6 text-blue-500" />
+                <Database className="h-6 w-6 text-blue-500" />
               </div>
-              <h3 className="text-2xl font-medium text-gray-900 mb-6">Data Integrity & Traceability</h3>
+              <h3 className="text-2xl font-medium text-gray-900 mb-6">RESTful API Suite</h3>
               <p className="text-gray-600 leading-relaxed">
-                The shared ledger stores only the cryptographic proof (hash) of your data, guaranteeing authenticity 
-                and making it impossible to tamper with the history.
+                Complete REST API endpoints for QR generation, passport creation, and compliance reporting. 
+                OpenAPI 3.0 documentation with SDKs for popular programming languages.
+              </p>
+              <div className="mt-6 bg-gray-50 p-4 rounded-lg">
+                <code className="text-sm text-gray-700">
+                  POST /api/v1/qr/generate<br/>
+                  GET /api/v1/passports/{id}<br/>
+                  POST /api/v1/compliance/dbp
+                </code>
               </p>
             </div>
             <div className="bg-white border border-gray-200 rounded-2xl p-10">
               <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-8">
-                <Database className="h-6 w-6 text-emerald-500" />
+                <Lock className="h-6 w-6 text-emerald-500" />
               </div>
-              <h3 className="text-2xl font-medium text-gray-900 mb-6">Privacy by Design (Hybrid Model)</h3>
+              <h3 className="text-2xl font-medium text-gray-900 mb-6">Blockchain Integration APIs</h3>
               <p className="text-gray-600 leading-relaxed">
-                Sensitive, proprietary data (trade secrets) is stored securely off-chain in your private databases, 
-                ensuring high performance, scalability, and data sovereignty.
+                API endpoints for immutable data recording and verification. Every compliance record is 
+                cryptographically secured and tamper-proof through blockchain integration.
+              </p>
+              <div className="mt-6 bg-gray-50 p-4 rounded-lg">
+                <code className="text-sm text-gray-700">
+                  POST /api/v1/blockchain/record<br/>
+                  GET /api/v1/blockchain/verify/{hash}<br/>
+                  GET /api/v1/audit/trail/{id}
+                </code>
               </p>
             </div>
           </div>
