@@ -207,7 +207,7 @@ Best regards`);
               </h1>
               <p className="text-xl text-gray-600 mb-10 leading-relaxed max-w-2xl">
                 TrustTrack generates unique QR codes for Digital Product Passports, with specialized focus on 
-                Digital Battery Passports (DBP), CBAM compliance, and ESG reporting. Each QR code links to 
+                Battery Digital Passports (BDP), CBAM compliance, and ESG reporting. Each QR code links to 
                 immutable, blockchain-verified product data that meets the world's most demanding compliance mandates.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -407,8 +407,8 @@ Best regards`);
                     </div>
                     <h4 className="text-lg font-medium text-gray-900 mb-6">QR Code → Battery Passport</h4>
                     <img 
-                      src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://trusttrack.io" 
-                      alt="QR Code linking to TrustTrack"
+                      src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://trusttrack.io/dbp" 
+                      alt="QR Code linking to DBP Passport"
                       className="w-full h-full object-contain rounded-lg"
                     />
                     <div className="space-y-4 text-sm">
