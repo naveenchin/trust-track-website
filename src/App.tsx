@@ -512,8 +512,8 @@ Best regards`);
                     </div>
                     <h4 className="text-lg font-medium text-gray-900 mb-6">CBAM Report</h4>
                     <img 
-                      src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://trusttrack.io/cbam" 
-                      alt="QR Code linking to CBAM Report"
+                      src="https://api.qrserver.com/v1/create-qr-code/?size=96x96&data=https://trusttrack.io" 
+                      alt="QR Code linking to TrustTrack"
                       className="w-24 h-24 mx-auto mb-4 border border-gray-200 rounded-lg"
                     />
                     <div className="space-y-4 text-sm">
@@ -714,7 +714,7 @@ Best regards`);
               </p>
               <div className="text-xs text-gray-500 leading-relaxed">
                 TrustTrack is a Distributed DPP System Service enabling economic operators to achieve 
-                compliance with EU Battery Regulation (2023/1542) DBP mandate and CBAM.
+                compliance with EU Battery Regulation (2023/1542) Digital Battery Passport (DBP) mandate and CBAM.
               </div>
             </div>
             <div>

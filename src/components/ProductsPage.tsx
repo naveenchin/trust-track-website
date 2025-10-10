@@ -84,7 +84,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onContactDemo }) => 
             </h1>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-12">
               Generate unique QR codes for any product that link to comprehensive digital passports. 
-              Specialized solutions for DBP (Digital Battery Passports), CBAM compliance, and ESG reporting.
+              Specialized solutions for Digital Battery Passports (DBP), CBAM compliance, and ESG reporting.
             </p>
             <button 
               onClick={onContactDemo}
@@ -347,7 +347,7 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onContactDemo }) => 
           </h2>
           <p className="text-xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
             Start creating unique blockchain-secured QR codes for your products today. Each QR links to comprehensive 
-            Specialized solutions for DBP (Digital Battery Passports), CBAM compliance, and ESG reporting.
+            Specialized solutions for Digital Battery Passports (DBP), CBAM compliance, and ESG reporting.
           </p>
           <button 
             onClick={onContactDemo}
