@@ -121,6 +121,24 @@ Best regards`);
     }
   ];
 
+  const esgFeatures = [
+    {
+      icon: Globe,
+      title: 'Comprehensive ESG Metrics',
+      description: 'Track environmental, social, and governance indicators across your entire supply chain'
+    },
+    {
+      icon: FileCheck,
+      title: 'Automated ESG Reporting',
+      description: 'Generate standardized reports for investors, regulators, and sustainability frameworks (GRI, SASB, TCFD)'
+    },
+    {
+      icon: Shield,
+      title: 'Verified Sustainability Claims',
+      description: 'Blockchain-backed proof of ESG performance prevents greenwashing and builds stakeholder trust'
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
@@ -142,7 +160,7 @@ Best regards`);
                 onClick={handleContactDemo}
                 className="bg-blue-500 text-white px-6 py-3 rounded-xl font-medium hover:bg-blue-600 transition-colors"
               >
-                Request Demo
+                Request Compliance Demo
               </button>
             </div>
 
@@ -167,7 +185,7 @@ Best regards`);
                 onClick={handleContactDemo}
                 className="block w-full text-left bg-blue-500 text-white px-6 py-3 rounded-xl font-medium hover:bg-blue-600 transition-colors"
               >
-                Request Demo
+                Request Compliance Demo
               </button>
             </div>
           </div>
@@ -183,12 +201,12 @@ Best regards`);
                 The Immutable Layer for Global Supply Chain Compliance
               </div>
               <h1 className="text-5xl lg:text-6xl font-light text-gray-900 mb-8 leading-tight">
-                EU Compliance,
+                DBP, CBAM & ESG,
                 <br />
                 <span className="font-medium">Simplified.</span>
               </h1>
               <p className="text-xl text-gray-600 mb-10 leading-relaxed max-w-2xl">
-                TrustTrack powers your Digital Battery Passports & CBAM Reporting. 
+                TrustTrack powers your Digital Battery Passports, CBAM Reporting & ESG Compliance. 
                 Eliminate audit risk and operational complexity with our blockchain-based platform 
                 providing immutable, audit-ready data for the world's most demanding compliance mandates.
               </p>
@@ -253,6 +271,10 @@ Best regards`);
                   <div className="flex items-center justify-between p-4 bg-white border border-gray-200 rounded-xl">
                     <span className="text-sm font-medium text-gray-700">CBAM Reports Generated</span>
                     <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
+                  </div>
+                  <div className="flex items-center justify-between p-4 bg-white border border-gray-200 rounded-xl">
+                    <span className="text-sm font-medium text-gray-700">ESG Metrics Tracked</span>
+                    <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" style={{animationDelay: '1.5s'}}></div>
                   </div>
                   <div className="flex items-center justify-between p-4 bg-white border border-gray-200 rounded-xl">
                     <span className="text-sm font-medium text-gray-700">Audit Trail Verified</span>
@@ -327,9 +349,9 @@ Best regards`);
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-6">
-              Our Products:
+              Our Compliance Suite:
               <br />
-              <span className="font-medium">Compliance-as-a-Service for Critical Mandates</span>
+              <span className="font-medium">DBP, CBAM & ESG Solutions for Critical Mandates</span>
             </h2>
           </div>
 
@@ -390,6 +412,71 @@ Best regards`);
                         <span className="text-gray-900 font-medium">92%</span>
                       </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-16">
+            <div className="bg-gray-50 border border-gray-200 rounded-2xl p-12">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div className="bg-white border border-gray-200 rounded-2xl p-8">
+                  <div className="text-center">
+                    <div className="w-16 h-16 bg-emerald-500 mx-auto mb-6 rounded-xl flex items-center justify-center">
+                      <Globe className="h-8 w-8 text-white" />
+                    </div>
+                    <h4 className="text-lg font-medium text-gray-900 mb-6">ESG Dashboard</h4>
+                    <div className="space-y-4 text-sm">
+                      <div className="bg-gray-50 border border-gray-200 rounded-xl p-4">
+                        <div className="flex justify-between items-center">
+                          <span className="text-gray-600">Carbon Footprint</span>
+                          <span className="text-emerald-600 font-medium">-15% YoY</span>
+                        </div>
+                      </div>
+                      <div className="bg-gray-50 border border-gray-200 rounded-xl p-4">
+                        <div className="flex justify-between items-center">
+                          <span className="text-gray-600">Supply Chain Score</span>
+                          <span className="text-blue-600 font-medium">A+ Rating</span>
+                        </div>
+                      </div>
+                      <div className="text-xs text-gray-500 mt-4">
+                        Real-time ESG metrics and reporting
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className="inline-flex items-center bg-emerald-100 text-emerald-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+                    <Globe className="h-4 w-4 mr-2" />
+                    Growing investor & regulatory demand
+                  </div>
+                  <h3 className="text-3xl font-light text-gray-900 mb-6">
+                    Environmental, Social & Governance
+                    <br />
+                    <span className="font-medium">(ESG) Reporting Platform</span>
+                  </h3>
+                  <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                    Meet growing investor and regulatory ESG demands with comprehensive sustainability reporting. 
+                    Track Scope 1, 2, and 3 emissions, social impact metrics, and governance indicators with immutable audit trails.
+                  </p>
+                  <div className="space-y-6">
+                    {esgFeatures.map((feature, index) => {
+                      const IconComponent = feature.icon;
+                      return (
+                        <div key={index} className="flex items-start space-x-4">
+                          <div className="flex-shrink-0">
+                            <div className="w-8 h-8 bg-emerald-100 rounded-lg flex items-center justify-center">
+                              <IconComponent className="h-4 w-4 text-emerald-600" />
+                            </div>
+                          </div>
+                          <div>
+                            <h4 className="font-medium text-gray-900 mb-1">{feature.title}</h4>
+                            <p className="text-gray-600 text-sm leading-relaxed">{feature.description}</p>
+                          </div>
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
               </div>
@@ -612,6 +699,7 @@ Best regards`);
               <ul className="space-y-3">
                 <li><a href="#products" className="text-gray-400 hover:text-gray-300 transition-colors">DBP Platform</a></li>
                 <li><a href="#products" className="text-gray-400 hover:text-gray-300 transition-colors">CBAM Reporter</a></li>
+                <li><a href="#products" className="text-gray-400 hover:text-gray-300 transition-colors">ESG Platform</a></li>
                 <li><a href="#technology" className="text-gray-400 hover:text-gray-300 transition-colors">Technology</a></li>
               </ul>
             </div>
