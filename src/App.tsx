@@ -198,17 +198,17 @@ Best regards`);
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
             <div className="lg:col-span-7">
               <div className="text-emerald-600 font-medium text-sm mb-6 tracking-wide uppercase">
-                API-First • Developer-Friendly • Audit-Ready
+                Blockchain-Powered • Audit-Ready • Compliance-First
               </div>
               <h1 className="text-5xl lg:text-6xl font-light text-gray-900 mb-8 leading-tight">
-                API-First Platform for
+                QR Code Generator for
                 <br />
                 <span className="font-medium">Digital Product Passports</span>
               </h1>
               <p className="text-xl text-gray-600 mb-10 leading-relaxed max-w-2xl">
-                TrustTrack provides RESTful APIs to generate unique QR codes for Digital Product Passports. 
-                Integrate with your existing ERP, MES, and LIMS systems. Specialized APIs for Digital Battery 
-                Passports (DBP), CBAM compliance, and ESG reporting with blockchain-verified data integrity.
+                Generate unique blockchain-secured QR codes linking to immutable compliance data for 
+                Digital Battery Passports (DBP), CBAM reporting, and ESG compliance. Turn every product 
+                into a verifiable digital passport.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button 
@@ -226,7 +226,7 @@ Best regards`);
                 </a>
               </div>
               <div className="mt-12 text-xs text-emerald-600 font-medium tracking-wide uppercase">
-                RESTful APIs • OpenAPI Documentation • Easy Integration
+                Blockchain-Verified • Immutable • Audit-Proof
               </div>
             </div>
             <div className="lg:col-span-5">
@@ -315,13 +315,13 @@ Best regards`);
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-6">
-              API-First Architecture:
+              The TrustTrack Solution:
               <br />
-              <span className="font-medium">RESTful APIs for Every Function</span>
+              <span className="font-medium">Blockchain-Secured Digital Passports</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-12">
-              Integrate TrustTrack's compliance APIs directly into your existing systems. Generate QR codes, 
-              create digital passports, and manage compliance data programmatically with our RESTful API suite.
+              Transform every product into a verifiable digital passport with unique QR codes linking to 
+              immutable compliance data. Built for enterprise integration and regulatory compliance.
             </p>
           </div>
 
@@ -353,13 +353,13 @@ Best regards`);
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-6">
-              API-Powered Digital Passport Solutions:
+              Specialized Digital Passport Solutions:
               <br />
-              <span className="font-medium">Programmatic QR Generation for DBP, CBAM & ESG</span>
+              <span className="font-medium">QR-Linked Compliance for DBP, CBAM & ESG</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Use our APIs to programmatically generate unique QR codes for any product. Each QR links to specialized 
-              digital passports with compliance data for Digital Battery Passports (DBP), carbon reporting, and ESG metrics.
+              Generate unique QR codes for any product that link to specialized digital passports with 
+              compliance data for Digital Battery Passports (DBP), carbon reporting, and ESG metrics.
             </p>
           </div>
 
@@ -579,13 +579,13 @@ Best regards`);
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-6">
-              Enterprise API Architecture:
+              Enterprise-Grade Technology:
               <br />
-              <span className="font-medium">Built for Integration</span>
+              <span className="font-medium">Built for Scale & Security</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              TrustTrack's API-first architecture enables seamless integration with your existing enterprise systems. 
-              RESTful endpoints with OpenAPI documentation, webhook support, and enterprise-grade security.
+              TrustTrack combines blockchain security with enterprise integration capabilities. 
+              Seamlessly connect with your existing systems while ensuring data immutability and compliance.
             </p>
           </div>
 
@@ -596,8 +596,8 @@ Best regards`);
               </div>
               <h3 className="text-2xl font-medium text-gray-900 mb-6">System Integration</h3>
               <p className="text-gray-600 leading-relaxed">
-                API-first platform with REST endpoints for QR generation, passport creation, and compliance reporting. 
-                Easy integration with existing systems through standardized interfaces.
+                Connect seamlessly with your existing enterprise systems. Our platform integrates with 
+                ERP systems, MES/LIMS, and other data sources to capture product information at the source.
               </p>
               <div className="mt-6 bg-gray-50 p-4 rounded-lg">
                 <code className="text-sm text-gray-700">
@@ -611,10 +611,10 @@ Best regards`);
               <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-8">
                 <Lock className="h-6 w-6 text-emerald-500" />
               </div>
-              <h3 className="text-2xl font-medium text-gray-900 mb-6">Blockchain Integration</h3>
+              <h3 className="text-2xl font-medium text-gray-900 mb-6">Blockchain Security</h3>
               <p className="text-gray-600 leading-relaxed">
-                Seamless blockchain integration for immutable data recording and verification. Every compliance record is 
-                cryptographically secured and tamper-proof through blockchain integration.
+                Every compliance record is cryptographically secured and tamper-proof. Our blockchain 
+                integration ensures data immutability and provides auditors with verifiable proof of compliance.
               </p>
               <div className="mt-6 bg-gray-50 p-4 rounded-lg">
                 <code className="text-sm text-gray-700">
