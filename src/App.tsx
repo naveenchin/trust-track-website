@@ -80,7 +80,7 @@ Best regards`);
     {
       icon: FileCheck,
       title: 'Compliance Ready',
-      description: 'Auto-generate regulator-ready reports for BDP, CBAM, and ESG compliance from QR-linked passport data.',
+      description: 'Auto-generate regulator-ready reports for DBP, CBAM, and ESG compliance from QR-linked passport data.',
       color: 'text-emerald-500'
     },
     {
