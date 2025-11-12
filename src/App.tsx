@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { 
   Shield, 
   Link2, 
@@ -21,8 +22,9 @@ import {
   Hexagon
 } from 'lucide-react';
 import { Logo } from './components/Logo';
+import { DBPPage } from './components/DBPPage';
 
-function App() {
+function HomePage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleContactDemo = () => {
@@ -160,6 +162,7 @@ Best regards`);
             
             <div className="hidden md:flex items-center space-x-8">
               <a href="#products" className="text-gray-500 hover:text-gray-700 font-medium transition-colors">Products</a>
+              <Link to="/dbp" className="text-gray-500 hover:text-gray-700 font-medium transition-colors">Digital Battery Passport</Link>
               <a href="#technology" className="text-gray-500 hover:text-gray-700 font-medium transition-colors">Technology</a>
               <a href="#contact" className="text-gray-500 hover:text-gray-700 font-medium transition-colors">Contact</a>
               <button 
@@ -185,6 +188,7 @@ Best regards`);
           <div className="md:hidden bg-white border-t border-gray-100">
             <div className="px-6 py-4 space-y-3">
               <a href="#products" className="block text-gray-500 hover:text-gray-700 font-medium">Products</a>
+              <Link to="/dbp" className="block text-gray-500 hover:text-gray-700 font-medium">Digital Battery Passport</Link>
               <a href="#technology" className="block text-gray-500 hover:text-gray-700 font-medium">Technology</a>
               <a href="#contact" className="block text-gray-500 hover:text-gray-700 font-medium">Contact</a>
               <button 
@@ -762,6 +766,17 @@ Best regards`);
         </div>
       </section>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/dbp" element={<DBPPage />} />
+      </Routes>
+    </Router>
   );
 }
 
