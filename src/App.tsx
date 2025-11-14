@@ -70,7 +70,7 @@ Best regards`);
     {
       icon: Lock,
       title: 'Immutable Ledger',
-      description: 'Every transaction and data update is hashed and recorded using distributed ledger technology, guaranteeing data authenticity.',
+      description: 'Every transaction and data update is hashed and recorded using Digital Ledger Technology (DLT), guaranteeing data authenticity.',
       color: 'text-emerald-500'
     },
     {
@@ -208,7 +208,7 @@ Best regards`);
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
             <div className="lg:col-span-7">
               <div className="text-emerald-600 font-medium text-sm mb-6 tracking-wide uppercase">
-                Blockchain-Powered • Audit-Ready • Compliance-First
+                DLT-Powered • Audit-Ready • Compliance-First
               </div>
               <h1 className="text-5xl lg:text-6xl font-light text-gray-900 mb-8 leading-tight">
                 Digital Product Passport Solutions:
@@ -216,7 +216,7 @@ Best regards`);
                 <span className="font-medium">Simplified</span>
               </h1>
               <p className="text-xl text-gray-600 mb-10 leading-relaxed max-w-2xl">
-                Generate unique blockchain-secured QR codes linking to immutable compliance data for 
+                Generate unique DLT-secured QR codes linking to immutable compliance data for 
                 Digital Battery Passports (DBP), CBAM reporting, and ESG compliance. Turn every product 
                 into a verifiable digital passport.
               </p>
@@ -236,7 +236,7 @@ Best regards`);
                 </a>
               </div>
               <div className="mt-12 text-xs text-emerald-600 font-medium tracking-wide uppercase">
-                Blockchain-Verified • Immutable • Audit-Proof
+                DLT-Verified • Immutable • Audit-Proof
               </div>
             </div>
             <div className="lg:col-span-5">
@@ -330,7 +330,7 @@ Best regards`);
               <span className="font-medium">Blockchain-Secured Digital Passports</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-12">
-              Transform every product into a verifiable digital passport with unique QR codes linking to 
+              Transform every product into a verifiable digital passport with unique DLT-secured QR codes linking to 
               immutable compliance data. Built for enterprise integration and regulatory compliance.
             </p>
           </div>
@@ -557,7 +557,7 @@ Best regards`);
                   </h3>
                   <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                     Generate QR codes for products requiring CBAM compliance (Cement, Steel, Aluminum). 
-                    Each QR links to verified carbon data, eliminating manual reporting and reducing compliance costs.
+                    Each QR links to DLT-verified carbon data, eliminating manual reporting and reducing compliance costs.
                   </p>
                   <div className="space-y-6">
                     {cbamFeatures.map((feature, index) => {
@@ -594,7 +594,7 @@ Best regards`);
               <span className="font-medium">Built for Scale & Security</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              TrustTrack combines blockchain security with enterprise integration capabilities. 
+              TrustTrack combines DLT security with enterprise integration capabilities. 
               Seamlessly connect with your existing systems while ensuring data immutability and compliance.
             </p>
           </div>
@@ -621,7 +621,7 @@ Best regards`);
               <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-8">
                 <Lock className="h-6 w-6 text-emerald-500" />
               </div>
-              <h3 className="text-2xl font-medium text-gray-900 mb-6">Blockchain Security</h3>
+              <h3 className="text-2xl font-medium text-gray-900 mb-6">DLT Security</h3>
               <p className="text-gray-600 leading-relaxed">
                 Every compliance record is cryptographically secured and tamper-proof. Our blockchain 
                 integration ensures data immutability and provides auditors with verifiable proof of compliance.
@@ -734,7 +734,7 @@ Best regards`);
                 <span className="font-medium text-xl text-white">TrustTrack</span>
               </div>
               <p className="text-gray-400 mb-6 max-w-md leading-relaxed">
-                The Immutable Layer for Global Supply Chain Compliance. Blockchain-powered platform 
+                The Immutable Layer for Global Supply Chain Compliance. DLT-powered platform 
                 for Digital Battery Passports (DBP), CBAM reporting, and ESG compliance.
               </p>
               <div className="text-xs text-gray-500 leading-relaxed">

@@ -143,7 +143,7 @@ Best regards`);
     {
       icon: Link2,
       title: 'Immutable Ledger',
-      description: 'Blockchain-verified lifecycle data ensuring audit integrity',
+      description: 'DLT-verified lifecycle data ensuring audit integrity',
       color: 'text-blue-500',
       borderColor: 'border-blue-200'
     },
