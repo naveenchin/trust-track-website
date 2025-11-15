@@ -23,6 +23,7 @@ import {
 } from 'lucide-react';
 import { Logo } from './components/Logo';
 import { DBPPage } from './components/DBPPage';
+import { DBPDummyPage } from './components/DBPDummyPage';
 
 function HomePage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -774,6 +775,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/dbp" element={<DBPDummyPage />} />
         <Route path="/dbp" element={<DBPPage />} />
       </Routes>
     </Router>
