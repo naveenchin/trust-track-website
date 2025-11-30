@@ -8,7 +8,7 @@ interface LogoProps {
 export const Logo: React.FC<LogoProps> = ({ className = "", size = 40 }) => {
   return (
     <img
-      src="/logo_1024.png"
+      src="/logo_transparent_2048.png"
       alt="TrustTrack Logo"
       width={size}
       height={size}
