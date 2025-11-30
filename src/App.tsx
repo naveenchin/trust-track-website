@@ -156,7 +156,7 @@ Best regards`);
           <div className="flex justify-between h-20">
             <div className="flex items-center">
               <div className="flex-shrink-0 flex items-center">
-                <Logo className="h-10 w-auto mr-4" size={40} />
+                <Logo className="h-10 w-10 mr-4" />
                 <span className="font-medium text-2xl text-gray-800 tracking-tight">TrustTrack</span>
               </div>
             </div>
@@ -252,7 +252,7 @@ Best regards`);
                       {/* Tracking line forming circle */}
                       <div className="w-32 h-32 border-2 border-emerald-200 rounded-full flex items-center justify-center border-dashed animate-spin" style={{animationDuration: '20s'}}>
                         <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center">
-                          <Logo className="h-8 w-auto" size={32} />
+                          <Logo className="h-8 w-8" />
                         </div>
                       </div>
                       
@@ -731,7 +731,7 @@ Best regards`);
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center mb-6">
-                <Logo className="h-8 w-auto mr-3" size={32} />
+                <Logo className="h-8 w-8 mr-3" />
                 <span className="font-medium text-xl text-white">TrustTrack</span>
               </div>
               <p className="text-gray-400 mb-6 max-w-md leading-relaxed">
