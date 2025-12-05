@@ -26,11 +26,7 @@ Deno.serve(async (req: Request) => {
 
   try {
     const demoRequest: DemoRequest = await req.json();
-    const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY");
-
-    if (!RESEND_API_KEY) {
-      throw new Error("RESEND_API_KEY is not configured");
-    }
+    const RESEND_API_KEY = "re_ffrfnkb5_H8rwDud3wuF5rhVzmwbTkCj1";
 
     const emailHtml = `
       <h2>New Demo Request from TrustTrack Website</h2>
@@ -82,7 +78,7 @@ Submitted at: ${new Date().toLocaleString()}
         Authorization: `Bearer ${RESEND_API_KEY}`,
       },
       body: JSON.stringify({
-        from: "TrustTrack <noreply@trusttrack.io>",
+        from: "TrustTrack Demo <onboarding@resend.dev>",
         to: [
           "naveen@trusttrack.io",
           "arun@trusttrack.io",
