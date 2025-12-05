@@ -558,7 +558,7 @@ Best regards`);
                   </h3>
                   <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                     Generate QR codes for products requiring CBAM compliance (Cement, Steel, Aluminum). 
-                    Each QR links to DLT-verified carbon data, eliminating manual reporting and reducing compliance costs.
+                    Each QR links to Distributed Ledger Technology(DLT)-verified carbon data, eliminating manual reporting and reducing compliance costs.
                   </p>
                   <div className="space-y-6">
                     {cbamFeatures.map((feature, index) => {
