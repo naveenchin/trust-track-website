@@ -238,7 +238,7 @@ function HomePage() {
                   <div className="relative z-10 flex items-center justify-center">
                     <div className="w-64 h-64 border-2 border-blue-200 rounded-full relative flex items-center justify-center">
                       {/* Tracking line forming circle */}
-                      <div className="w-44 h-44 border-2 border-emerald-200 rounded-full flex items-center justify-center border-dashed animate-spin" style={{animationDuration: '20s'}}>
+                      <div className="w-44 h-44 border-2 border-emerald-200 rounded-full flex items-center justify-center border-dashed">
                         <div className="w-24 h-24 bg-blue-500 rounded-full flex items-center justify-center">
                           <Logo className="h-20 w-20" size={80} />
                         </div>
