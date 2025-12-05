@@ -24,26 +24,14 @@ import {
 import { Logo } from './components/Logo';
 import { DBPPage } from './components/DBPPage';
 import { DBPDummyPage } from './components/DBPDummyPage';
+import { ContactForm } from './components/ContactForm';
 
 function HomePage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [contactFormOpen, setContactFormOpen] = useState(false);
 
   const handleContactDemo = () => {
-    const subject = encodeURIComponent('TrustTrack Compliance Demo Request');
-    const body = encodeURIComponent(`Hello,
-
-I would like to schedule a compliance demo of TrustTrack for our organization.
-
-Our industry: [Please specify - Batteries, Cement, Steel, Aluminum, etc.]
-Compliance needs: [DBP, CBAM, ESG, or combination]
-Timeline: [When do you need to be compliant?]
-
-Please let me know your availability.
-
-Best regards`);
-    
-    const mailtoLink = `mailto:naveen@trusttrack.io?subject=${subject}&body=${body}`;
-    window.location.href = mailtoLink;
+    setContactFormOpen(true);
   };
 
   const problemPoints = [
@@ -766,6 +754,8 @@ Best regards`);
           </div>
         </div>
       </section>
+
+      <ContactForm isOpen={contactFormOpen} onClose={() => setContactFormOpen(false)} />
     </div>
   );
 }

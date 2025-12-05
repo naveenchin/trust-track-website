@@ -1,20 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  Battery, 
-  Shield, 
-  Database, 
-  Lock, 
-  Users, 
-  Zap, 
-  FileCheck, 
-  Globe, 
-  Settings, 
-  DollarSign, 
-  Leaf, 
-  Recycle, 
-  Rocket, 
-  AlertTriangle, 
+import {
+  Battery,
+  Shield,
+  Database,
+  Lock,
+  Users,
+  Zap,
+  FileCheck,
+  Globe,
+  Settings,
+  DollarSign,
+  Leaf,
+  Recycle,
+  Rocket,
+  AlertTriangle,
   Link2,
   FileX,
   Puzzle,
@@ -32,42 +32,17 @@ import {
   Server
 } from 'lucide-react';
 import { Logo } from './Logo';
+import { ContactForm } from './ContactForm';
 
 export const DBPPage: React.FC = () => {
+  const [contactFormOpen, setContactFormOpen] = useState(false);
+
   const handleGetDBPReady = () => {
-    const subject = encodeURIComponent('Get DBP-Ready with TrustTrack');
-    const body = encodeURIComponent(`Hello,
-
-I would like to learn more about getting DBP-ready with TrustTrack for the February 2027 mandate.
-
-Our organization: [Please specify - Battery manufacturer, importer, distributor, etc.]
-Current data management approach: [ERP system, Excel, other tools]
-Timeline for compliance preparation: [When do you need to be ready?]
-
-Please provide information on your DBP solution.
-
-Best regards`);
-    
-    const mailtoLink = `mailto:naveen@trusttrack.io?subject=${subject}&body=${body}`;
-    window.location.href = mailtoLink;
+    setContactFormOpen(true);
   };
 
   const handleBookDemo = () => {
-    const subject = encodeURIComponent('TrustTrack DBP Demo Request');
-    const body = encodeURIComponent(`Hello,
-
-I would like to schedule a Digital Battery Passport (DBP) demo to understand how TrustTrack can help our organization prepare for the February 2027 mandate.
-
-Our battery operations: [Please specify - Manufacturing, Import, Distribution, etc.]
-Current compliance preparation status: [Just starting, in progress, need verification]
-Preferred demo format: [Live demo, technical walkthrough, compliance overview]
-
-Please let me know your availability.
-
-Best regards`);
-    
-    const mailtoLink = `mailto:naveen@trusttrack.io?subject=${subject}&body=${body}`;
-    window.location.href = mailtoLink;
+    setContactFormOpen(true);
   };
 
   const industryProblems = [
@@ -753,6 +728,8 @@ Best regards`);
           </div>
         </div>
       </section>
+
+      <ContactForm isOpen={contactFormOpen} onClose={() => setContactFormOpen(false)} />
     </div>
   );
 };
