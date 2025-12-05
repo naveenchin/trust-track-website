@@ -316,7 +316,7 @@ function HomePage() {
             <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-6">
               The TrustTrack Solution:
               <br />
-              <span className="font-medium">DLT-Secured Digital Passports</span>
+              <span className="font-medium">Blockchain-Secured Digital Passports</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-12">
               Transform every product into a verifiable digital passport with unique Distributed Ledger Technology (DLT)-secured QR codes linking to
