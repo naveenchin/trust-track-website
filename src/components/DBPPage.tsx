@@ -15,9 +15,9 @@ import {
   Recycle, 
   Rocket, 
   AlertTriangle, 
-  Link2, 
-  FileX, 
-  Puzzle, 
+  Link2,
+  FileX,
+  Puzzle,
   BarChart3,
   Brain,
   Coins,
@@ -27,7 +27,9 @@ import {
   Calendar,
   Factory,
   TrendingUp,
-  Eye
+  Eye,
+  Mail,
+  Server
 } from 'lucide-react';
 import { Logo } from './Logo';
 
@@ -143,7 +145,7 @@ Best regards`);
     {
       icon: Link2,
       title: 'Immutable Ledger',
-      description: 'DLT-verified lifecycle data ensuring audit integrity',
+      description: 'Distributed Ledger Technology (DLT)-verified lifecycle data ensuring audit integrity',
       color: 'text-blue-500',
       borderColor: 'border-blue-200'
     },
@@ -340,6 +342,123 @@ Best regards`);
             <p className="text-xl font-medium text-orange-500">
               The challenge isn't compliance — it's trust, traceability, and technological readiness.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* SME Challenges Section */}
+      <section className="bg-white py-24 border-t border-gray-200">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-8">
+              SME Challenges:
+              <br />
+              <span className="font-medium text-blue-600">Scale, Cost & Resources</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+              SMEs face unique hurdles when adopting Digital Battery Passports—mainly cost, digital readiness, and supply-chain influence.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            {/* High Cost Burden */}
+            <div className="bg-gray-50 border-2 border-gray-200 rounded-2xl p-8 hover:border-blue-300 transition-colors">
+              <div className="flex justify-center mb-6">
+                <div className="w-16 h-16 bg-red-100 rounded-xl flex items-center justify-center">
+                  <DollarSign className="h-8 w-8 text-red-600" />
+                </div>
+              </div>
+              <h3 className="text-xl font-medium text-gray-900 mb-4 text-center">High Cost Burden</h3>
+              <p className="text-gray-600 leading-relaxed text-center">
+                Large OEMs can absorb big Digital Product Passport (DPP) investments. SMEs can't. Even €10k–€50k for a basic setup can strain budgets,
+                especially without dedicated staff or scale advantages.
+              </p>
+            </div>
+
+            {/* Integration & Digitalization Gaps */}
+            <div className="bg-gray-50 border-2 border-gray-200 rounded-2xl p-8 hover:border-blue-300 transition-colors">
+              <div className="flex justify-center mb-6">
+                <div className="w-16 h-16 bg-orange-100 rounded-xl flex items-center justify-center">
+                  <Settings className="h-8 w-8 text-orange-600" />
+                </div>
+              </div>
+              <h3 className="text-xl font-medium text-gray-900 mb-4 text-center">Integration & Digitalization Gaps</h3>
+              <p className="text-gray-600 leading-relaxed text-center">
+                SMEs often run on legacy systems and spreadsheets, making modern DPP integration slow and expensive.
+                Unlike OEMs with fully digitized ERP/PLM systems, SMEs must upgrade or manually bridge data.
+              </p>
+            </div>
+
+            {/* Limited Supply Chain Leverage */}
+            <div className="bg-gray-50 border-2 border-gray-200 rounded-2xl p-8 hover:border-blue-300 transition-colors">
+              <div className="flex justify-center mb-6">
+                <div className="w-16 h-16 bg-yellow-100 rounded-xl flex items-center justify-center">
+                  <Users className="h-8 w-8 text-yellow-600" />
+                </div>
+              </div>
+              <h3 className="text-xl font-medium text-gray-900 mb-4 text-center">Limited Supply Chain Leverage</h3>
+              <p className="text-gray-600 leading-relaxed text-center">
+                SMEs lack the power to demand standardized data from large Tier-N suppliers.
+                Complex certifications like LCAs and carbon footprint data add further pressure.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Not Fully Digital Section */}
+      <section className="bg-blue-50 py-24 border-y border-blue-200">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl lg:text-5xl font-light text-gray-900 mb-8">
+              Not Fully Digital?
+              <br />
+              <span className="font-medium text-blue-600">No Problem.</span>
+            </h2>
+          </div>
+
+          <div className="bg-white border-2 border-blue-300 rounded-2xl p-12 max-w-4xl mx-auto">
+            <div className="flex items-start space-x-8 mb-8">
+              <div className="flex-shrink-0">
+                <div className="w-20 h-20 bg-blue-100 rounded-2xl flex items-center justify-center">
+                  <Mail className="h-10 w-10 text-blue-600" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-2xl font-medium text-gray-900 mb-4">
+                  You don't need a modern IT stack to start.
+                </h3>
+                <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                  Our platform integrates with your existing processes—even if they're email-driven.
+                </p>
+                <div className="bg-blue-50 border border-blue-200 rounded-xl p-6">
+                  <div className="flex items-start space-x-4">
+                    <CheckCircle className="h-6 w-6 text-blue-600 mt-1 flex-shrink-0" />
+                    <p className="text-gray-700 leading-relaxed">
+                      We automatically read incoming emails and supplier communications, extract required data,
+                      and build your Battery Passport in the background.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="border-t border-gray-200 pt-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div>
+                  <div className="text-3xl font-light text-blue-600 mb-2">No</div>
+                  <div className="text-sm text-gray-600">Workflow Changes</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-light text-blue-600 mb-2">No</div>
+                  <div className="text-sm text-gray-600">New Systems to Learn</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-light text-blue-600 mb-2">No</div>
+                  <div className="text-sm text-gray-600">IT Infrastructure Required</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

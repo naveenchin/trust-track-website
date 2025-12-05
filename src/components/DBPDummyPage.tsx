@@ -125,7 +125,7 @@ export const DBPDummyPage: React.FC = () => {
               <div className="w-5 h-5 bg-blue-500 rounded-full flex items-center justify-center mr-3">
                 <div className="w-2 h-2 bg-white rounded-full"></div>
               </div>
-              <span className="text-blue-700 font-medium">This Digital Battery Passport is DLT-verified and compliant with EU Battery Regulation (2023/1542)</span>
+              <span className="text-blue-700 font-medium">This Digital Battery Passport is Distributed Ledger Technology (DLT)-verified and compliant with EU Battery Regulation (2023/1542)</span>
             </div>
           </div>
         </div>
