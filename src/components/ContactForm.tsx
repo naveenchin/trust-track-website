@@ -71,9 +71,14 @@ export const ContactForm: React.FC<ContactFormProps> = ({ isOpen, onClose }) => 
         }),
       });
 
+      const emailResult = await emailResponse.json();
+
       if (!emailResponse.ok) {
-        console.error('Failed to send notification email');
+        console.error('Failed to send notification email:', emailResult);
+        throw new Error(emailResult.error || 'Failed to send notification email');
       }
+
+      console.log('Email sent successfully:', emailResult);
 
       setSubmitStatus('success');
 
