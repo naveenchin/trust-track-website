@@ -82,7 +82,7 @@ Submitted at: ${new Date().toLocaleString()}
         Authorization: `Bearer ${RESEND_API_KEY}`,
       },
       body: JSON.stringify({
-        from: "TrustTrack Demo <onboarding@resend.dev>",
+        from: "TrustTrack Demo <demo@trusttrack.io>",
         to: [
           "naveen@trusttrack.io",
           "arun@trusttrack.io",
