@@ -5,14 +5,15 @@ interface LogoProps {
   size?: number;
 }
 
-export const Logo: React.FC<LogoProps> = ({ className = "", size = 40 }) => {
+export const Logo: React.FC<LogoProps> = ({ className = "", size = 56 }) => {
   return (
     <img
-      src="/logo_transparent_2048.png"
+      src="/logo_transparent_2048 copy copy.png"
       alt="TrustTrack Logo"
       width={size}
       height={size}
       className={className}
+      style={{ objectFit: 'contain' }}
     />
   );
 };

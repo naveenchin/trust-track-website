@@ -236,7 +236,7 @@ Best regards`);
           <div className="flex justify-between h-20">
             <div className="flex items-center">
               <Link to="/" className="flex-shrink-0 flex items-center">
-                <Logo className="h-10 w-10 mr-4" />
+                <Logo className="h-16 w-16 mr-4" size={64} />
                 <span className="font-medium text-2xl text-gray-800 tracking-tight">TrustTrack</span>
               </Link>
             </div>
@@ -547,9 +547,9 @@ Best regards`);
               <ArrowRight className="h-8 w-8 text-blue-500" />
 
               <div className="text-center">
-                <div className="w-32 h-32 bg-blue-500 rounded-2xl flex items-center justify-center mb-4">
+                <div className="w-40 h-40 bg-blue-500 rounded-2xl flex items-center justify-center mb-4">
                   <div className="text-center">
-                    <Logo className="h-8 w-8 mx-auto mb-2" />
+                    <Logo className="h-16 w-16 mx-auto mb-2" size={64} />
                     <div className="text-sm font-medium text-white">TrustTrack</div>
                     <div className="text-xs text-blue-200">Verification Engine</div>
                   </div>
