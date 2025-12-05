@@ -217,8 +217,8 @@ Best regards`);
                 <span className="font-medium">Simplified</span>
               </h1>
               <p className="text-xl text-gray-600 mb-10 leading-relaxed max-w-2xl">
-                Generate unique DLT-secured QR codes linking to immutable compliance data for 
-                Digital Battery Passports (DBP), CBAM reporting, and ESG compliance. Turn every product 
+                Generate unique Distributed Ledger Technology (DLT)-secured QR codes linking to immutable compliance data for
+                Digital Battery Passports (DBP), CBAM reporting, and ESG compliance. Turn every product
                 into a verifiable digital passport.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -331,7 +331,7 @@ Best regards`);
               <span className="font-medium">Blockchain-Secured Digital Passports</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-12">
-              Transform every product into a verifiable digital passport with unique DLT-secured QR codes linking to 
+              Transform every product into a verifiable digital passport with unique Distributed Ledger Technology (DLT)-secured QR codes linking to
               immutable compliance data. Built for enterprise integration and regulatory compliance.
             </p>
           </div>
@@ -557,8 +557,8 @@ Best regards`);
                     <span className="font-medium">QR-Linked Carbon Data</span>
                   </h3>
                   <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                    Generate QR codes for products requiring CBAM compliance (Cement, Steel, Aluminum). 
-                    Each QR links to Distributed Ledger Technology(DLT)-verified carbon data, eliminating manual reporting and reducing compliance costs.
+                    Generate QR codes for products requiring CBAM compliance (Cement, Steel, Aluminum).
+                    Each QR links to Distributed Ledger Technology (DLT)-verified carbon data, eliminating manual reporting and reducing compliance costs.
                   </p>
                   <div className="space-y-6">
                     {cbamFeatures.map((feature, index) => {
@@ -595,7 +595,7 @@ Best regards`);
               <span className="font-medium">Built for Scale & Security</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              TrustTrack combines DLT security with enterprise integration capabilities. 
+              TrustTrack combines Distributed Ledger Technology (DLT) security with enterprise integration capabilities.
               Seamlessly connect with your existing systems while ensuring data immutability and compliance.
             </p>
           </div>
@@ -735,7 +735,7 @@ Best regards`);
                 <span className="font-medium text-xl text-white">TrustTrack</span>
               </div>
               <p className="text-gray-400 mb-6 max-w-md leading-relaxed">
-                The Immutable Layer for Global Supply Chain Compliance. DLT-powered platform 
+                The Immutable Layer for Global Supply Chain Compliance. Distributed Ledger Technology (DLT)-powered platform
                 for Digital Battery Passports (DBP), CBAM reporting, and ESG compliance.
               </p>
               <div className="text-xs text-gray-500 leading-relaxed">
