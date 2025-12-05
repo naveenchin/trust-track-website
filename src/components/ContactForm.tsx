@@ -52,24 +52,28 @@ export const ContactForm: React.FC<ContactFormProps> = ({ isOpen, onClose }) => 
 
       if (error) throw error;
 
-      const emailSubject = encodeURIComponent('TrustTrack Compliance Demo Request');
-      const emailBody = encodeURIComponent(`New Demo Request:
+      const functionUrl = `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/send-demo-notification`;
 
-Name: ${formData.name}
-Email: ${formData.email}
-Company: ${formData.company || 'Not provided'}
-Industry: ${formData.industry}
-Compliance Needs: ${formData.complianceNeeds}
-Timeline: ${formData.timeline}
+      const emailResponse = await fetch(functionUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          company: formData.company,
+          industry: formData.industry,
+          complianceNeeds: formData.complianceNeeds,
+          timeline: formData.timeline,
+          message: formData.message,
+        }),
+      });
 
-Message:
-${formData.message || 'No additional message'}
-
----
-This request has been saved to the database.`);
-
-      const mailtoLink = `mailto:naveen@trusttrack.io,arun@trusttrack.io,arpit@trusttrack.io?subject=${emailSubject}&body=${emailBody}`;
-      window.location.href = mailtoLink;
+      if (!emailResponse.ok) {
+        console.error('Failed to send notification email');
+      }
 
       setSubmitStatus('success');
 
