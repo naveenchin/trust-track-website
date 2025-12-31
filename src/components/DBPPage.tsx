@@ -729,6 +729,15 @@ export const DBPPage: React.FC = () => {
         </div>
       </section>
 
+      {/* Footer */}
+      <section className="bg-gray-900 border-t border-gray-800 py-8">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+          <div className="text-center">
+            <p className="text-gray-400">© 2025 TrustTrack. All rights reserved.</p>
+          </div>
+        </div>
+      </section>
+
       <ContactForm isOpen={contactFormOpen} onClose={() => setContactFormOpen(false)} />
     </div>
   );
