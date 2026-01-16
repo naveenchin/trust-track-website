@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import {
   Battery,
   Shield,
@@ -210,15 +209,15 @@ export const DBPPage: React.FC = () => {
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="flex justify-between h-20">
             <div className="flex items-center">
-              <Link to="/" className="flex-shrink-0 flex items-center">
+              <a href="https://trusttrack.io" className="flex-shrink-0 flex items-center">
                 <Logo className="h-16 w-16 mr-4" size={64} />
                 <span className="font-medium text-2xl text-gray-800 tracking-tight">TrustTrack</span>
-              </Link>
+              </a>
             </div>
-            
+
             <div className="flex items-center space-x-8">
-              <Link to="/" className="text-gray-500 hover:text-gray-700 font-medium transition-colors">← Back to Home</Link>
-              <button 
+              <a href="https://trusttrack.io" className="text-gray-500 hover:text-gray-700 font-medium transition-colors">← Back to Home</a>
+              <button
                 onClick={handleBookDemo}
                 className="bg-blue-500 text-white px-6 py-3 rounded-xl font-medium hover:bg-blue-600 transition-colors"
               >
