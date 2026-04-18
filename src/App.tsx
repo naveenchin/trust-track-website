@@ -25,6 +25,8 @@ import { Logo } from './components/Logo';
 import { DBPPage } from './components/DBPPage';
 import { DBPDummyPage } from './components/DBPDummyPage';
 import { ContactForm } from './components/ContactForm';
+import { BlogsPage } from './components/BlogsPage';
+import { BlogPostPage } from './components/BlogPostPage';
 
 function HomePage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -153,8 +155,9 @@ function HomePage() {
               <a href="#products" className="text-gray-500 hover:text-gray-700 font-medium transition-colors">Products</a>
               <Link to="/products/dbp" className="text-gray-500 hover:text-gray-700 font-medium transition-colors">Digital Battery Passport</Link>
               <a href="#technology" className="text-gray-500 hover:text-gray-700 font-medium transition-colors">Technology</a>
+              <Link to="/blogs" className="text-gray-500 hover:text-gray-700 font-medium transition-colors">Blogs</Link>
               <a href="#contact" className="text-gray-500 hover:text-gray-700 font-medium transition-colors">Contact</a>
-              <button 
+              <button
                 onClick={handleContactDemo}
                 className="bg-blue-500 text-white px-6 py-3 rounded-xl font-medium hover:bg-blue-600 transition-colors"
               >
@@ -179,6 +182,7 @@ function HomePage() {
               <a href="#products" className="block text-gray-500 hover:text-gray-700 font-medium">Products</a>
               <Link to="/products/dbp" className="block text-gray-500 hover:text-gray-700 font-medium">Digital Battery Passport</Link>
               <a href="#technology" className="block text-gray-500 hover:text-gray-700 font-medium">Technology</a>
+              <Link to="/blogs" className="block text-gray-500 hover:text-gray-700 font-medium">Blogs</Link>
               <a href="#contact" className="block text-gray-500 hover:text-gray-700 font-medium">Contact</a>
               <button 
                 onClick={handleContactDemo}
@@ -743,6 +747,7 @@ function HomePage() {
             <div>
               <h3 className="text-white font-medium mb-6">Company</h3>
               <ul className="space-y-3">
+                <li><Link to="/blogs" className="text-gray-400 hover:text-gray-300 transition-colors">Blogs</Link></li>
                 <li><button onClick={handleContactDemo} className="text-gray-400 hover:text-gray-300 transition-colors text-left">Contact</button></li>
                 <li><a href="#" className="text-gray-400 hover:text-gray-300 transition-colors">Support</a></li>
                 <li><a href="#" className="text-gray-400 hover:text-gray-300 transition-colors">Documentation</a></li>
@@ -767,7 +772,9 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/products/dbp" element={<DBPPage />} />
         <Route path="/dbp" element={<DBPPage />} />
-        <Route path="/dbp" element={<DBPDummyPage />} />
+        <Route path="/dbp-demo" element={<DBPDummyPage />} />
+        <Route path="/blogs" element={<BlogsPage />} />
+        <Route path="/blogs/:slug" element={<BlogPostPage />} />
       </Routes>
     </Router>
   );
