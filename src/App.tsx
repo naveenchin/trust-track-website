@@ -22,6 +22,7 @@ import {
   Hexagon
 } from 'lucide-react';
 import { Logo } from './components/Logo';
+import { Header } from './components/Header';
 import { DBPPage } from './components/DBPPage';
 import { DBPDummyPage } from './components/DBPDummyPage';
 import { ContactForm } from './components/ContactForm';
@@ -29,7 +30,6 @@ import { BlogsPage } from './components/BlogsPage';
 import { BlogPostPage } from './components/BlogPostPage';
 
 function HomePage() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [contactFormOpen, setContactFormOpen] = useState(false);
 
   const handleContactDemo = () => {
@@ -141,59 +141,15 @@ function HomePage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="bg-white border-b border-gray-100 sticky top-0 z-50">
-        <div className="max-w-6xl mx-auto px-6 lg:px-8">
-          <div className="flex justify-between h-20">
-            <div className="flex items-center">
-              <div className="flex-shrink-0 flex items-center">
-                <Logo className="h-16 w-16 mr-4" size={64} />
-                <span className="font-medium text-2xl text-gray-800 tracking-tight">TrustTrack</span>
-              </div>
-            </div>
-            
-            <div className="hidden md:flex items-center space-x-8">
-              <a href="#products" className="text-gray-500 hover:text-gray-700 font-medium transition-colors">Products</a>
-              <Link to="/products/dbp" className="text-gray-500 hover:text-gray-700 font-medium transition-colors">Digital Battery Passport</Link>
-              <a href="#technology" className="text-gray-500 hover:text-gray-700 font-medium transition-colors">Technology</a>
-              <Link to="/blogs" className="text-gray-500 hover:text-gray-700 font-medium transition-colors">Blogs</Link>
-              <a href="#contact" className="text-gray-500 hover:text-gray-700 font-medium transition-colors">Contact</a>
-              <button
-                onClick={handleContactDemo}
-                className="bg-blue-500 text-white px-6 py-3 rounded-xl font-medium hover:bg-blue-600 transition-colors"
-              >
-                Request Compliance Demo
-              </button>
-            </div>
-
-            <div className="md:hidden flex items-center">
-              <button
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="text-gray-500 hover:text-gray-700"
-              >
-                {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-              </button>
-            </div>
-          </div>
-        </div>
-
-        {mobileMenuOpen && (
-          <div className="md:hidden bg-white border-t border-gray-100">
-            <div className="px-6 py-4 space-y-3">
-              <a href="#products" className="block text-gray-500 hover:text-gray-700 font-medium">Products</a>
-              <Link to="/products/dbp" className="block text-gray-500 hover:text-gray-700 font-medium">Digital Battery Passport</Link>
-              <a href="#technology" className="block text-gray-500 hover:text-gray-700 font-medium">Technology</a>
-              <Link to="/blogs" className="block text-gray-500 hover:text-gray-700 font-medium">Blogs</Link>
-              <a href="#contact" className="block text-gray-500 hover:text-gray-700 font-medium">Contact</a>
-              <button 
-                onClick={handleContactDemo}
-                className="block w-full text-left bg-blue-500 text-white px-6 py-3 rounded-xl font-medium hover:bg-blue-600 transition-colors"
-              >
-                Request Compliance Demo
-              </button>
-            </div>
-          </div>
-        )}
-      </nav>
+      <Header
+        links={[
+          { label: 'Products', href: '#products' },
+          { label: 'Battery Passport', to: '/products/dbp' },
+          { label: 'Technology', href: '#technology' },
+          { label: 'Blogs', to: '/blogs' },
+          { label: 'Contact', href: '#contact' },
+        ]}
+      />
 
       {/* Hero Section */}
       <section className="bg-gray-50 py-24 lg:py-32">

@@ -1,61 +1,23 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Clock, Tag, Menu, X, ChevronRight } from 'lucide-react';
-import { Logo } from './Logo';
+import { ArrowRight, Clock, Tag, ChevronRight } from 'lucide-react';
+import { Header } from './Header';
 import { ContactForm } from './ContactForm';
 import { articles } from '../data/articles';
 
 export function BlogsPage() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [contactFormOpen, setContactFormOpen] = useState(false);
-
   const sorted = [...articles].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   return (
     <div className="min-h-screen bg-white">
-      <nav className="bg-white border-b border-gray-100 sticky top-0 z-50">
-        <div className="max-w-6xl mx-auto px-6 lg:px-8">
-          <div className="flex justify-between h-20">
-            <div className="flex items-center">
-              <Link to="/" className="flex-shrink-0 flex items-center">
-                <Logo className="h-16 w-16 mr-4" size={64} />
-                <span className="font-medium text-2xl text-gray-800 tracking-tight">TrustTrack</span>
-              </Link>
-            </div>
-            <div className="hidden md:flex items-center space-x-8">
-              <Link to="/#products" className="text-gray-500 hover:text-gray-700 font-medium transition-colors">Products</Link>
-              <Link to="/products/dbp" className="text-gray-500 hover:text-gray-700 font-medium transition-colors">Digital Battery Passport</Link>
-              <Link to="/blogs" className="text-gray-800 hover:text-gray-900 font-medium transition-colors border-b-2 border-blue-500 pb-1">Blogs</Link>
-              <button
-                onClick={() => setContactFormOpen(true)}
-                className="bg-blue-500 text-white px-6 py-3 rounded-xl font-medium hover:bg-blue-600 transition-colors"
-              >
-                Request Compliance Demo
-              </button>
-            </div>
-            <div className="md:hidden flex items-center">
-              <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="text-gray-500 hover:text-gray-700">
-                {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-              </button>
-            </div>
-          </div>
-        </div>
-        {mobileMenuOpen && (
-          <div className="md:hidden bg-white border-t border-gray-100">
-            <div className="px-6 py-4 space-y-3">
-              <Link to="/#products" className="block text-gray-500 hover:text-gray-700 font-medium">Products</Link>
-              <Link to="/products/dbp" className="block text-gray-500 hover:text-gray-700 font-medium">Digital Battery Passport</Link>
-              <Link to="/blogs" className="block text-gray-800 font-medium">Blogs</Link>
-              <button
-                onClick={() => setContactFormOpen(true)}
-                className="block w-full text-left bg-blue-500 text-white px-6 py-3 rounded-xl font-medium hover:bg-blue-600 transition-colors"
-              >
-                Request Compliance Demo
-              </button>
-            </div>
-          </div>
-        )}
-      </nav>
+      <Header
+        links={[
+          { label: 'Products', href: '/#products' },
+          { label: 'Battery Passport', to: '/products/dbp' },
+          { label: 'Blogs', to: '/blogs', active: true },
+        ]}
+      />
 
       <section className="bg-gray-50 py-20 lg:py-28">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
