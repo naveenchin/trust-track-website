@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useParams, Navigate } from 'react-router-dom';
-import { Clock, Tag, ArrowLeft, ArrowRight, ChevronRight, Menu, X } from 'lucide-react';
+import { Clock, Tag, ArrowLeft, ArrowRight, ChevronRight, Menu, X, ExternalLink } from 'lucide-react';
 import { Logo } from './Logo';
 import { ContactForm } from './ContactForm';
 import { getArticleBySlug, articles, ArticleBlock } from '../data/articles';
@@ -43,6 +43,32 @@ function renderBlock(block: ArticleBlock, index: number) {
             </li>
           ))}
         </ul>
+      );
+    case 'image':
+      return (
+        <figure key={index} className="my-10">
+          <div className="bg-gray-50 border border-gray-200 rounded-xl overflow-hidden">
+            <img src={block.src} alt={block.caption || ''} className="w-full h-auto" loading="lazy" />
+          </div>
+          {block.caption && (
+            <figcaption className="mt-3 text-sm text-gray-500 text-center italic">
+              {block.caption}
+            </figcaption>
+          )}
+        </figure>
+      );
+    case 'link-ref':
+      return (
+        <a
+          key={index}
+          href={block.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group my-4 flex items-center justify-between p-4 bg-blue-50 border border-blue-100 rounded-xl hover:border-blue-300 hover:bg-blue-100/60 transition-colors"
+        >
+          <span className="text-blue-700 font-medium text-sm break-all pr-4">{block.label}</span>
+          <ExternalLink className="h-4 w-4 text-blue-500 flex-shrink-0 group-hover:translate-x-0.5 transition-transform" />
+        </a>
       );
     case 'divider':
       return <hr key={index} className="my-10 border-gray-200" />;
@@ -146,6 +172,16 @@ export function BlogPostPage() {
           </div>
         </div>
       </section>
+
+      {article.heroImage && (
+        <div className="bg-white pt-10">
+          <div className="max-w-4xl mx-auto px-6 lg:px-8">
+            <div className="bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden">
+              <img src={article.heroImage} alt={article.title} className="w-full h-auto" />
+            </div>
+          </div>
+        </div>
+      )}
 
       <article className="bg-white py-16">
         <div className="max-w-3xl mx-auto px-6 lg:px-8">
